@@ -14,6 +14,17 @@
 		1C9537941FEDFBEF00B87B01 /* WeChatPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C95378D1FEDFBEF00B87B01 /* WeChatPlugin.framework */; };
 		1C9537951FEDFBEF00B87B01 /* WeChatPlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C95378D1FEDFBEF00B87B01 /* WeChatPlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C95379B1FEDFCEA00B87B01 /* Tools in Resources */ = {isa = PBXBuildFile; fileRef = 1C95379A1FEDFCEA00B87B01 /* Tools */; };
+		1C9537A01FEDFDF500B87B01 /* WCPluginPrefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1C95379E1FEDFDF500B87B01 /* WCPluginPrefix.pch */; };
+		1C9537A11FEDFDF500B87B01 /* WeChatPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C95379F1FEDFDF500B87B01 /* WeChatPlugin.m */; };
+		1C9537AF1FEDFE3B00B87B01 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1C9537AA1FEDFE3B00B87B01 /* LICENSE */; };
+		1C9537B01FEDFE3B00B87B01 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537AB1FEDFE3B00B87B01 /* fishhook.c */; };
+		1C9537B11FEDFE3B00B87B01 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537AC1FEDFE3B00B87B01 /* fishhook.h */; };
+		1C9537B21FEDFE3B00B87B01 /* Cycript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9537AE1FEDFE3B00B87B01 /* Cycript.framework */; };
+		1C9537B51FEDFF0B00B87B01 /* WCPAntiDebugHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537B31FEDFF0B00B87B01 /* WCPAntiDebugHelper.h */; };
+		1C9537B61FEDFF0B00B87B01 /* WCPAntiDebugHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537B41FEDFF0B00B87B01 /* WCPAntiDebugHelper.m */; };
+		1C9537BB1FEDFF6800B87B01 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9537BA1FEDFF6800B87B01 /* JavaScriptCore.framework */; };
+		1C9537BD1FEDFF6F00B87B01 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9537BC1FEDFF6F00B87B01 /* libstdc++.6.0.9.tbd */; };
+		1C9537BF1FEDFF7600B87B01 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9537BE1FEDFF7600B87B01 /* libc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +62,18 @@
 		1C95378F1FEDFBEF00B87B01 /* WeChatPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeChatPlugin.h; sourceTree = "<group>"; };
 		1C9537901FEDFBEF00B87B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C95379A1FEDFCEA00B87B01 /* Tools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tools; sourceTree = SOURCE_ROOT; };
+		1C95379E1FEDFDF500B87B01 /* WCPluginPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginPrefix.pch; sourceTree = "<group>"; };
+		1C95379F1FEDFDF500B87B01 /* WeChatPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatPlugin.m; sourceTree = "<group>"; };
+		1C9537AA1FEDFE3B00B87B01 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1C9537AB1FEDFE3B00B87B01 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		1C9537AC1FEDFE3B00B87B01 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		1C9537AE1FEDFE3B00B87B01 /* Cycript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cycript.framework; sourceTree = "<group>"; };
+		1C9537B31FEDFF0B00B87B01 /* WCPAntiDebugHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPAntiDebugHelper.h; sourceTree = "<group>"; };
+		1C9537B41FEDFF0B00B87B01 /* WCPAntiDebugHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPAntiDebugHelper.m; sourceTree = "<group>"; };
+		1C9537B81FEDFF5F00B87B01 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1C9537BA1FEDFF6800B87B01 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		1C9537BC1FEDFF6F00B87B01 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		1C9537BE1FEDFF7600B87B01 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +89,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9537BF1FEDFF7600B87B01 /* libc++.tbd in Frameworks */,
+				1C9537BD1FEDFF6F00B87B01 /* libstdc++.6.0.9.tbd in Frameworks */,
+				1C9537BB1FEDFF6800B87B01 /* JavaScriptCore.framework in Frameworks */,
+				1C9537B21FEDFE3B00B87B01 /* Cycript.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +105,7 @@
 				1C9537711FEDFB7800B87B01 /* WeChatHelper */,
 				1C95378E1FEDFBEF00B87B01 /* WeChatPlugin */,
 				1C9537701FEDFB7800B87B01 /* Products */,
+				1C9537B71FEDFF5F00B87B01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,10 +134,53 @@
 		1C95378E1FEDFBEF00B87B01 /* WeChatPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				1C9537A81FEDFE3B00B87B01 /* ThirdParty */,
+				1C95379E1FEDFDF500B87B01 /* WCPluginPrefix.pch */,
+				1C9537B41FEDFF0B00B87B01 /* WCPAntiDebugHelper.m */,
+				1C9537B31FEDFF0B00B87B01 /* WCPAntiDebugHelper.h */,
+				1C95379F1FEDFDF500B87B01 /* WeChatPlugin.m */,
 				1C95378F1FEDFBEF00B87B01 /* WeChatPlugin.h */,
 				1C9537901FEDFBEF00B87B01 /* Info.plist */,
 			);
 			path = WeChatPlugin;
+			sourceTree = "<group>";
+		};
+		1C9537A81FEDFE3B00B87B01 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				1C9537A91FEDFE3B00B87B01 /* fishhook */,
+				1C9537AD1FEDFE3B00B87B01 /* cycript */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		1C9537A91FEDFE3B00B87B01 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				1C9537AA1FEDFE3B00B87B01 /* LICENSE */,
+				1C9537AB1FEDFE3B00B87B01 /* fishhook.c */,
+				1C9537AC1FEDFE3B00B87B01 /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+		1C9537AD1FEDFE3B00B87B01 /* cycript */ = {
+			isa = PBXGroup;
+			children = (
+				1C9537AE1FEDFE3B00B87B01 /* Cycript.framework */,
+			);
+			path = cycript;
+			sourceTree = "<group>";
+		};
+		1C9537B71FEDFF5F00B87B01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C9537BE1FEDFF7600B87B01 /* libc++.tbd */,
+				1C9537BC1FEDFF6F00B87B01 /* libstdc++.6.0.9.tbd */,
+				1C9537BA1FEDFF6800B87B01 /* JavaScriptCore.framework */,
+				1C9537B81FEDFF5F00B87B01 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +190,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9537A01FEDFDF500B87B01 /* WCPluginPrefix.pch in Headers */,
 				1C9537911FEDFBEF00B87B01 /* WeChatPlugin.h in Headers */,
+				1C9537B11FEDFE3B00B87B01 /* fishhook.h in Headers */,
+				1C9537B51FEDFF0B00B87B01 /* WCPAntiDebugHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9537AF1FEDFE3B00B87B01 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +326,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9537B61FEDFF0B00B87B01 /* WCPAntiDebugHelper.m in Sources */,
+				1C9537B01FEDFE3B00B87B01 /* fishhook.c in Sources */,
+				1C9537A11FEDFDF500B87B01 /* WeChatPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +454,7 @@
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8D983AWF36;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WeChatHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wechat.hijack;
@@ -391,6 +470,7 @@
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8D983AWF36;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WeChatHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wechat.hijack;
@@ -411,6 +491,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeChatPlugin/ThirdParty/cycript",
+				);
 				INFOPLIST_FILE = WeChatPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -435,6 +520,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeChatPlugin/ThirdParty/cycript",
+				);
 				INFOPLIST_FILE = WeChatPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
