@@ -13,6 +13,7 @@
 		1C9537911FEDFBEF00B87B01 /* WeChatPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C95378F1FEDFBEF00B87B01 /* WeChatPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C9537941FEDFBEF00B87B01 /* WeChatPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C95378D1FEDFBEF00B87B01 /* WeChatPlugin.framework */; };
 		1C9537951FEDFBEF00B87B01 /* WeChatPlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C95378D1FEDFBEF00B87B01 /* WeChatPlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C95379B1FEDFCEA00B87B01 /* Tools in Resources */ = {isa = PBXBuildFile; fileRef = 1C95379A1FEDFCEA00B87B01 /* Tools */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1C95378D1FEDFBEF00B87B01 /* WeChatPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeChatPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C95378F1FEDFBEF00B87B01 /* WeChatPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeChatPlugin.h; sourceTree = "<group>"; };
 		1C9537901FEDFBEF00B87B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C95379A1FEDFCEA00B87B01 /* Tools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tools; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		1C9537711FEDFB7800B87B01 /* WeChatHelper */ = {
 			isa = PBXGroup;
 			children = (
+				1C95379A1FEDFCEA00B87B01 /* Tools */,
 				1C9537721FEDFB7800B87B01 /* AppDelegate.h */,
 				1C9537731FEDFB7800B87B01 /* AppDelegate.m */,
 				1C95377B1FEDFB7800B87B01 /* Assets.xcassets */,
@@ -131,6 +134,7 @@
 				1C95376C1FEDFB7700B87B01 /* Frameworks */,
 				1C95376D1FEDFB7700B87B01 /* Resources */,
 				1C9537991FEDFBEF00B87B01 /* Embed Frameworks */,
+				1C95379D1FEDFCFF00B87B01 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -203,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C95379B1FEDFCEA00B87B01 /* Tools in Resources */,
 				1C95377C1FEDFB7800B87B01 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +220,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C95379D1FEDFCFF00B87B01 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Tools/patch.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C95376B1FEDFB7700B87B01 /* Sources */ = {
