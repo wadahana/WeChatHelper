@@ -25,6 +25,54 @@
 		1C9537BB1FEDFF6800B87B01 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9537BA1FEDFF6800B87B01 /* JavaScriptCore.framework */; };
 		1C9537BD1FEDFF6F00B87B01 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9537BC1FEDFF6F00B87B01 /* libstdc++.6.0.9.tbd */; };
 		1C9537BF1FEDFF7600B87B01 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9537BE1FEDFF7600B87B01 /* libc++.tbd */; };
+		1C9537CE1FEE001400B87B01 /* UIView+WCPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537C21FEE001400B87B01 /* UIView+WCPlugin.m */; };
+		1C9537CF1FEE001400B87B01 /* WCPluginUIHijack.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537C31FEE001400B87B01 /* WCPluginUIHijack.h */; };
+		1C9537D01FEE001400B87B01 /* UIView+WCPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537C41FEE001400B87B01 /* UIView+WCPlugin.h */; };
+		1C9537D11FEE001400B87B01 /* WCPluginUIHijack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537C51FEE001400B87B01 /* WCPluginUIHijack.m */; };
+		1C9537D21FEE001400B87B01 /* NSBundle+WCPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537C71FEE001400B87B01 /* NSBundle+WCPlugin.h */; };
+		1C9537D31FEE001400B87B01 /* WCPluginMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537C81FEE001400B87B01 /* WCPluginMethodSwizzling.h */; };
+		1C9537D41FEE001400B87B01 /* WCPluginDBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537C91FEE001400B87B01 /* WCPluginDBHelper.h */; };
+		1C9537D51FEE001400B87B01 /* WCPluginDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537CA1FEE001400B87B01 /* WCPluginDefine.h */; };
+		1C9537D61FEE001400B87B01 /* NSBundle+WCPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537CB1FEE001400B87B01 /* NSBundle+WCPlugin.m */; };
+		1C9537D71FEE001400B87B01 /* WCPluginMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537CC1FEE001400B87B01 /* WCPluginMethodSwizzling.m */; };
+		1C9537D81FEE001400B87B01 /* WCPluginDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537CD1FEE001400B87B01 /* WCPluginDBHelper.m */; };
+		1C9537E11FEE005600B87B01 /* WCPluginRightSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537D91FEE005500B87B01 /* WCPluginRightSwitchTableViewCell.m */; };
+		1C9537E21FEE005600B87B01 /* WCPluginAboutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537DA1FEE005500B87B01 /* WCPluginAboutViewController.h */; };
+		1C9537E31FEE005600B87B01 /* WCPluginAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537DB1FEE005500B87B01 /* WCPluginAboutViewController.m */; };
+		1C9537E41FEE005600B87B01 /* WCPluginRightLabelTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537DC1FEE005600B87B01 /* WCPluginRightLabelTableViewCell.h */; };
+		1C9537E51FEE005600B87B01 /* WCPluginRightLabelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537DD1FEE005600B87B01 /* WCPluginRightLabelTableViewCell.m */; };
+		1C9537E61FEE005600B87B01 /* WCPluginSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537DE1FEE005600B87B01 /* WCPluginSettingViewController.h */; };
+		1C9537E71FEE005600B87B01 /* WCPluginRightSwitchTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537DF1FEE005600B87B01 /* WCPluginRightSwitchTableViewCell.h */; };
+		1C9537E81FEE005600B87B01 /* WCPluginSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537E01FEE005600B87B01 /* WCPluginSettingViewController.m */; };
+		1C9538091FEE00CC00B87B01 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537EA1FEE00CC00B87B01 /* MBProgressHUD.m */; };
+		1C95380A1FEE00CC00B87B01 /* MBProgressHUD+WSPXMBProgressHUDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537EB1FEE00CC00B87B01 /* MBProgressHUD+WSPXMBProgressHUDUtil.m */; };
+		1C95380B1FEE00CC00B87B01 /* MBProgressHUDManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537EC1FEE00CC00B87B01 /* MBProgressHUDManager.h */; };
+		1C95380C1FEE00CC00B87B01 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537ED1FEE00CC00B87B01 /* MBProgressHUD.h */; };
+		1C95380D1FEE00CC00B87B01 /* MBProgressHUD+WSPXMBProgressHUDUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537EE1FEE00CC00B87B01 /* MBProgressHUD+WSPXMBProgressHUDUtil.h */; };
+		1C95380E1FEE00CC00B87B01 /* MBProgressHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537EF1FEE00CC00B87B01 /* MBProgressHUDManager.m */; };
+		1C95380F1FEE00CC00B87B01 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537F11FEE00CC00B87B01 /* FMDatabase.h */; };
+		1C9538101FEE00CC00B87B01 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537F21FEE00CC00B87B01 /* FMDatabaseQueue.m */; };
+		1C9538111FEE00CC00B87B01 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537F31FEE00CC00B87B01 /* FMResultSet.h */; };
+		1C9538121FEE00CC00B87B01 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537F41FEE00CC00B87B01 /* FMDatabasePool.h */; };
+		1C9538131FEE00CC00B87B01 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537F51FEE00CC00B87B01 /* FMDatabaseAdditions.m */; };
+		1C9538141FEE00CC00B87B01 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537F61FEE00CC00B87B01 /* FMDatabase.m */; };
+		1C9538151FEE00CC00B87B01 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537F71FEE00CC00B87B01 /* FMDatabaseQueue.h */; };
+		1C9538161FEE00CC00B87B01 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537F81FEE00CC00B87B01 /* FMDB.h */; };
+		1C9538171FEE00CC00B87B01 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537F91FEE00CC00B87B01 /* FMDatabaseAdditions.h */; };
+		1C9538181FEE00CC00B87B01 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537FA1FEE00CC00B87B01 /* FMDatabasePool.m */; };
+		1C9538191FEE00CC00B87B01 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537FB1FEE00CC00B87B01 /* FMResultSet.m */; };
+		1C95381A1FEE00CC00B87B01 /* SWUtilityButtonTapGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537FD1FEE00CC00B87B01 /* SWUtilityButtonTapGestureRecognizer.h */; };
+		1C95381B1FEE00CC00B87B01 /* SWCellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537FE1FEE00CC00B87B01 /* SWCellScrollView.m */; };
+		1C95381C1FEE00CC00B87B01 /* NSMutableArray+SWUtilityButtons.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537FF1FEE00CC00B87B01 /* NSMutableArray+SWUtilityButtons.h */; };
+		1C95381D1FEE00CC00B87B01 /* SWLongPressGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9538001FEE00CC00B87B01 /* SWLongPressGestureRecognizer.h */; };
+		1C95381E1FEE00CC00B87B01 /* SWUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9538011FEE00CC00B87B01 /* SWUtilityButtonView.m */; };
+		1C95381F1FEE00CC00B87B01 /* SWTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9538021FEE00CC00B87B01 /* SWTableViewCell.h */; };
+		1C9538201FEE00CC00B87B01 /* SWUtilityButtonTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9538031FEE00CC00B87B01 /* SWUtilityButtonTapGestureRecognizer.m */; };
+		1C9538211FEE00CC00B87B01 /* SWLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9538041FEE00CC00B87B01 /* SWLongPressGestureRecognizer.m */; };
+		1C9538221FEE00CC00B87B01 /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9538051FEE00CC00B87B01 /* NSMutableArray+SWUtilityButtons.m */; };
+		1C9538231FEE00CC00B87B01 /* SWCellScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9538061FEE00CC00B87B01 /* SWCellScrollView.h */; };
+		1C9538241FEE00CC00B87B01 /* SWUtilityButtonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9538071FEE00CC00B87B01 /* SWUtilityButtonView.h */; };
+		1C9538251FEE00CC00B87B01 /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9538081FEE00CC00B87B01 /* SWTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +122,54 @@
 		1C9537BA1FEDFF6800B87B01 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		1C9537BC1FEDFF6F00B87B01 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		1C9537BE1FEDFF7600B87B01 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		1C9537C21FEE001400B87B01 /* UIView+WCPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WCPlugin.m"; sourceTree = "<group>"; };
+		1C9537C31FEE001400B87B01 /* WCPluginUIHijack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginUIHijack.h; sourceTree = "<group>"; };
+		1C9537C41FEE001400B87B01 /* UIView+WCPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WCPlugin.h"; sourceTree = "<group>"; };
+		1C9537C51FEE001400B87B01 /* WCPluginUIHijack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginUIHijack.m; sourceTree = "<group>"; };
+		1C9537C71FEE001400B87B01 /* NSBundle+WCPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+WCPlugin.h"; sourceTree = "<group>"; };
+		1C9537C81FEE001400B87B01 /* WCPluginMethodSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginMethodSwizzling.h; sourceTree = "<group>"; };
+		1C9537C91FEE001400B87B01 /* WCPluginDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginDBHelper.h; sourceTree = "<group>"; };
+		1C9537CA1FEE001400B87B01 /* WCPluginDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginDefine.h; sourceTree = "<group>"; };
+		1C9537CB1FEE001400B87B01 /* NSBundle+WCPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+WCPlugin.m"; sourceTree = "<group>"; };
+		1C9537CC1FEE001400B87B01 /* WCPluginMethodSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginMethodSwizzling.m; sourceTree = "<group>"; };
+		1C9537CD1FEE001400B87B01 /* WCPluginDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginDBHelper.m; sourceTree = "<group>"; };
+		1C9537D91FEE005500B87B01 /* WCPluginRightSwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginRightSwitchTableViewCell.m; sourceTree = "<group>"; };
+		1C9537DA1FEE005500B87B01 /* WCPluginAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginAboutViewController.h; sourceTree = "<group>"; };
+		1C9537DB1FEE005500B87B01 /* WCPluginAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginAboutViewController.m; sourceTree = "<group>"; };
+		1C9537DC1FEE005600B87B01 /* WCPluginRightLabelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginRightLabelTableViewCell.h; sourceTree = "<group>"; };
+		1C9537DD1FEE005600B87B01 /* WCPluginRightLabelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginRightLabelTableViewCell.m; sourceTree = "<group>"; };
+		1C9537DE1FEE005600B87B01 /* WCPluginSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginSettingViewController.h; sourceTree = "<group>"; };
+		1C9537DF1FEE005600B87B01 /* WCPluginRightSwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginRightSwitchTableViewCell.h; sourceTree = "<group>"; };
+		1C9537E01FEE005600B87B01 /* WCPluginSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginSettingViewController.m; sourceTree = "<group>"; };
+		1C9537EA1FEE00CC00B87B01 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		1C9537EB1FEE00CC00B87B01 /* MBProgressHUD+WSPXMBProgressHUDUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+WSPXMBProgressHUDUtil.m"; sourceTree = "<group>"; };
+		1C9537EC1FEE00CC00B87B01 /* MBProgressHUDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUDManager.h; sourceTree = "<group>"; };
+		1C9537ED1FEE00CC00B87B01 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		1C9537EE1FEE00CC00B87B01 /* MBProgressHUD+WSPXMBProgressHUDUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+WSPXMBProgressHUDUtil.h"; sourceTree = "<group>"; };
+		1C9537EF1FEE00CC00B87B01 /* MBProgressHUDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUDManager.m; sourceTree = "<group>"; };
+		1C9537F11FEE00CC00B87B01 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		1C9537F21FEE00CC00B87B01 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		1C9537F31FEE00CC00B87B01 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		1C9537F41FEE00CC00B87B01 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		1C9537F51FEE00CC00B87B01 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		1C9537F61FEE00CC00B87B01 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		1C9537F71FEE00CC00B87B01 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		1C9537F81FEE00CC00B87B01 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		1C9537F91FEE00CC00B87B01 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		1C9537FA1FEE00CC00B87B01 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		1C9537FB1FEE00CC00B87B01 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		1C9537FD1FEE00CC00B87B01 /* SWUtilityButtonTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUtilityButtonTapGestureRecognizer.h; sourceTree = "<group>"; };
+		1C9537FE1FEE00CC00B87B01 /* SWCellScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCellScrollView.m; sourceTree = "<group>"; };
+		1C9537FF1FEE00CC00B87B01 /* NSMutableArray+SWUtilityButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SWUtilityButtons.h"; sourceTree = "<group>"; };
+		1C9538001FEE00CC00B87B01 /* SWLongPressGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLongPressGestureRecognizer.h; sourceTree = "<group>"; };
+		1C9538011FEE00CC00B87B01 /* SWUtilityButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWUtilityButtonView.m; sourceTree = "<group>"; };
+		1C9538021FEE00CC00B87B01 /* SWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTableViewCell.h; sourceTree = "<group>"; };
+		1C9538031FEE00CC00B87B01 /* SWUtilityButtonTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWUtilityButtonTapGestureRecognizer.m; sourceTree = "<group>"; };
+		1C9538041FEE00CC00B87B01 /* SWLongPressGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLongPressGestureRecognizer.m; sourceTree = "<group>"; };
+		1C9538051FEE00CC00B87B01 /* NSMutableArray+SWUtilityButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SWUtilityButtons.m"; sourceTree = "<group>"; };
+		1C9538061FEE00CC00B87B01 /* SWCellScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCellScrollView.h; sourceTree = "<group>"; };
+		1C9538071FEE00CC00B87B01 /* SWUtilityButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUtilityButtonView.h; sourceTree = "<group>"; };
+		1C9538081FEE00CC00B87B01 /* SWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +230,7 @@
 		1C95378E1FEDFBEF00B87B01 /* WeChatPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				1C9537C01FEE001400B87B01 /* Class */,
 				1C9537A81FEDFE3B00B87B01 /* ThirdParty */,
 				1C95379E1FEDFDF500B87B01 /* WCPluginPrefix.pch */,
 				1C9537B41FEDFF0B00B87B01 /* WCPAntiDebugHelper.m */,
@@ -148,6 +245,9 @@
 		1C9537A81FEDFE3B00B87B01 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				1C9537F01FEE00CC00B87B01 /* FMDB */,
+				1C9537E91FEE00CC00B87B01 /* MBProgressHUD */,
+				1C9537FC1FEE00CC00B87B01 /* SWTableViewCell */,
 				1C9537A91FEDFE3B00B87B01 /* fishhook */,
 				1C9537AD1FEDFE3B00B87B01 /* cycript */,
 			);
@@ -183,6 +283,98 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1C9537C01FEE001400B87B01 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				1C9537C11FEE001400B87B01 /* UI */,
+				1C9537C61FEE001400B87B01 /* Utils */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		1C9537C11FEE001400B87B01 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1C9537DA1FEE005500B87B01 /* WCPluginAboutViewController.h */,
+				1C9537DB1FEE005500B87B01 /* WCPluginAboutViewController.m */,
+				1C9537DC1FEE005600B87B01 /* WCPluginRightLabelTableViewCell.h */,
+				1C9537DD1FEE005600B87B01 /* WCPluginRightLabelTableViewCell.m */,
+				1C9537DF1FEE005600B87B01 /* WCPluginRightSwitchTableViewCell.h */,
+				1C9537D91FEE005500B87B01 /* WCPluginRightSwitchTableViewCell.m */,
+				1C9537DE1FEE005600B87B01 /* WCPluginSettingViewController.h */,
+				1C9537E01FEE005600B87B01 /* WCPluginSettingViewController.m */,
+				1C9537C41FEE001400B87B01 /* UIView+WCPlugin.h */,
+				1C9537C21FEE001400B87B01 /* UIView+WCPlugin.m */,
+				1C9537C31FEE001400B87B01 /* WCPluginUIHijack.h */,
+				1C9537C51FEE001400B87B01 /* WCPluginUIHijack.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1C9537C61FEE001400B87B01 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1C9537CA1FEE001400B87B01 /* WCPluginDefine.h */,
+				1C9537C71FEE001400B87B01 /* NSBundle+WCPlugin.h */,
+				1C9537CB1FEE001400B87B01 /* NSBundle+WCPlugin.m */,
+				1C9537C81FEE001400B87B01 /* WCPluginMethodSwizzling.h */,
+				1C9537CC1FEE001400B87B01 /* WCPluginMethodSwizzling.m */,
+				1C9537C91FEE001400B87B01 /* WCPluginDBHelper.h */,
+				1C9537CD1FEE001400B87B01 /* WCPluginDBHelper.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1C9537E91FEE00CC00B87B01 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1C9537ED1FEE00CC00B87B01 /* MBProgressHUD.h */,
+				1C9537EA1FEE00CC00B87B01 /* MBProgressHUD.m */,
+				1C9537EE1FEE00CC00B87B01 /* MBProgressHUD+WSPXMBProgressHUDUtil.h */,
+				1C9537EB1FEE00CC00B87B01 /* MBProgressHUD+WSPXMBProgressHUDUtil.m */,
+				1C9537EC1FEE00CC00B87B01 /* MBProgressHUDManager.h */,
+				1C9537EF1FEE00CC00B87B01 /* MBProgressHUDManager.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		1C9537F01FEE00CC00B87B01 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				1C9537F11FEE00CC00B87B01 /* FMDatabase.h */,
+				1C9537F21FEE00CC00B87B01 /* FMDatabaseQueue.m */,
+				1C9537F31FEE00CC00B87B01 /* FMResultSet.h */,
+				1C9537F41FEE00CC00B87B01 /* FMDatabasePool.h */,
+				1C9537F51FEE00CC00B87B01 /* FMDatabaseAdditions.m */,
+				1C9537F61FEE00CC00B87B01 /* FMDatabase.m */,
+				1C9537F71FEE00CC00B87B01 /* FMDatabaseQueue.h */,
+				1C9537F81FEE00CC00B87B01 /* FMDB.h */,
+				1C9537F91FEE00CC00B87B01 /* FMDatabaseAdditions.h */,
+				1C9537FA1FEE00CC00B87B01 /* FMDatabasePool.m */,
+				1C9537FB1FEE00CC00B87B01 /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		1C9537FC1FEE00CC00B87B01 /* SWTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1C9538061FEE00CC00B87B01 /* SWCellScrollView.h */,
+				1C9537FE1FEE00CC00B87B01 /* SWCellScrollView.m */,
+				1C9538071FEE00CC00B87B01 /* SWUtilityButtonView.h */,
+				1C9538011FEE00CC00B87B01 /* SWUtilityButtonView.m */,
+				1C9538021FEE00CC00B87B01 /* SWTableViewCell.h */,
+				1C9538081FEE00CC00B87B01 /* SWTableViewCell.m */,
+				1C9537FF1FEE00CC00B87B01 /* NSMutableArray+SWUtilityButtons.h */,
+				1C9538051FEE00CC00B87B01 /* NSMutableArray+SWUtilityButtons.m */,
+				1C9538001FEE00CC00B87B01 /* SWLongPressGestureRecognizer.h */,
+				1C9538041FEE00CC00B87B01 /* SWLongPressGestureRecognizer.m */,
+				1C9537FD1FEE00CC00B87B01 /* SWUtilityButtonTapGestureRecognizer.h */,
+				1C9538031FEE00CC00B87B01 /* SWUtilityButtonTapGestureRecognizer.m */,
+			);
+			path = SWTableViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -190,10 +382,35 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C95380D1FEE00CC00B87B01 /* MBProgressHUD+WSPXMBProgressHUDUtil.h in Headers */,
+				1C95381A1FEE00CC00B87B01 /* SWUtilityButtonTapGestureRecognizer.h in Headers */,
+				1C9537E21FEE005600B87B01 /* WCPluginAboutViewController.h in Headers */,
+				1C95380F1FEE00CC00B87B01 /* FMDatabase.h in Headers */,
+				1C9538241FEE00CC00B87B01 /* SWUtilityButtonView.h in Headers */,
+				1C95380B1FEE00CC00B87B01 /* MBProgressHUDManager.h in Headers */,
+				1C9538111FEE00CC00B87B01 /* FMResultSet.h in Headers */,
+				1C95381C1FEE00CC00B87B01 /* NSMutableArray+SWUtilityButtons.h in Headers */,
+				1C9537E61FEE005600B87B01 /* WCPluginSettingViewController.h in Headers */,
+				1C95381F1FEE00CC00B87B01 /* SWTableViewCell.h in Headers */,
+				1C9537D51FEE001400B87B01 /* WCPluginDefine.h in Headers */,
+				1C9537D01FEE001400B87B01 /* UIView+WCPlugin.h in Headers */,
+				1C9537E71FEE005600B87B01 /* WCPluginRightSwitchTableViewCell.h in Headers */,
 				1C9537A01FEDFDF500B87B01 /* WCPluginPrefix.pch in Headers */,
+				1C9537D31FEE001400B87B01 /* WCPluginMethodSwizzling.h in Headers */,
+				1C9537D41FEE001400B87B01 /* WCPluginDBHelper.h in Headers */,
+				1C9538121FEE00CC00B87B01 /* FMDatabasePool.h in Headers */,
+				1C9538231FEE00CC00B87B01 /* SWCellScrollView.h in Headers */,
+				1C9537CF1FEE001400B87B01 /* WCPluginUIHijack.h in Headers */,
+				1C95381D1FEE00CC00B87B01 /* SWLongPressGestureRecognizer.h in Headers */,
+				1C9538171FEE00CC00B87B01 /* FMDatabaseAdditions.h in Headers */,
+				1C95380C1FEE00CC00B87B01 /* MBProgressHUD.h in Headers */,
+				1C9537D21FEE001400B87B01 /* NSBundle+WCPlugin.h in Headers */,
 				1C9537911FEDFBEF00B87B01 /* WeChatPlugin.h in Headers */,
+				1C9538161FEE00CC00B87B01 /* FMDB.h in Headers */,
 				1C9537B11FEDFE3B00B87B01 /* fishhook.h in Headers */,
 				1C9537B51FEDFF0B00B87B01 /* WCPAntiDebugHelper.h in Headers */,
+				1C9537E41FEE005600B87B01 /* WCPluginRightLabelTableViewCell.h in Headers */,
+				1C9538151FEE00CC00B87B01 /* FMDatabaseQueue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,8 +544,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C9537B61FEDFF0B00B87B01 /* WCPAntiDebugHelper.m in Sources */,
+				1C9538251FEE00CC00B87B01 /* SWTableViewCell.m in Sources */,
+				1C9538201FEE00CC00B87B01 /* SWUtilityButtonTapGestureRecognizer.m in Sources */,
+				1C95380A1FEE00CC00B87B01 /* MBProgressHUD+WSPXMBProgressHUDUtil.m in Sources */,
+				1C9538181FEE00CC00B87B01 /* FMDatabasePool.m in Sources */,
+				1C9537D61FEE001400B87B01 /* NSBundle+WCPlugin.m in Sources */,
+				1C9538141FEE00CC00B87B01 /* FMDatabase.m in Sources */,
+				1C9537E51FEE005600B87B01 /* WCPluginRightLabelTableViewCell.m in Sources */,
+				1C9538131FEE00CC00B87B01 /* FMDatabaseAdditions.m in Sources */,
+				1C9537D71FEE001400B87B01 /* WCPluginMethodSwizzling.m in Sources */,
+				1C9537E11FEE005600B87B01 /* WCPluginRightSwitchTableViewCell.m in Sources */,
+				1C95381E1FEE00CC00B87B01 /* SWUtilityButtonView.m in Sources */,
+				1C9537D11FEE001400B87B01 /* WCPluginUIHijack.m in Sources */,
+				1C9537D81FEE001400B87B01 /* WCPluginDBHelper.m in Sources */,
+				1C9537CE1FEE001400B87B01 /* UIView+WCPlugin.m in Sources */,
+				1C95381B1FEE00CC00B87B01 /* SWCellScrollView.m in Sources */,
+				1C9538101FEE00CC00B87B01 /* FMDatabaseQueue.m in Sources */,
+				1C9537E81FEE005600B87B01 /* WCPluginSettingViewController.m in Sources */,
+				1C9538191FEE00CC00B87B01 /* FMResultSet.m in Sources */,
+				1C9538091FEE00CC00B87B01 /* MBProgressHUD.m in Sources */,
+				1C95380E1FEE00CC00B87B01 /* MBProgressHUDManager.m in Sources */,
+				1C9537E31FEE005600B87B01 /* WCPluginAboutViewController.m in Sources */,
+				1C9538221FEE00CC00B87B01 /* NSMutableArray+SWUtilityButtons.m in Sources */,
 				1C9537B01FEDFE3B00B87B01 /* fishhook.c in Sources */,
 				1C9537A11FEDFDF500B87B01 /* WeChatPlugin.m in Sources */,
+				1C9538211FEE00CC00B87B01 /* SWLongPressGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +736,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WeChatPlugin/ThirdParty/cycript",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WeChatPlugin/WCPluginPrefix.pch;
 				INFOPLIST_FILE = WeChatPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -525,6 +767,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WeChatPlugin/ThirdParty/cycript",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WeChatPlugin/WCPluginPrefix.pch;
 				INFOPLIST_FILE = WeChatPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
