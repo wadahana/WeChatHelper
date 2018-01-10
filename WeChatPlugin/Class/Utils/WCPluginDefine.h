@@ -11,11 +11,15 @@
 
 #define kWeChatDebug (1)
 
-#define kWeChatLittleMode (1)
+#define kWeChatLiteMode (1)
 
 #define kWeChatPluginVersion (@"0.1.0")
 
 #define kWeChatPluginSettingTitle (@"微信小帮凶")
+
+#define kWeChatPluginMaxHiddenContact (5)
+
+#define kToastDuration (1.5)
 
 #define UIColorMake(r,g,b) [UIColor colorWithRed:((float)r/255.0) green:((float)g/255.0) blue:((float)b/255.0) alpha:1.0]
 

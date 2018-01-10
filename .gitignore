@@ -5,6 +5,7 @@
 Temp/
 WeChatHelper.xcodeproj/project.xcworkspace/
 WeChatHelper.xcodeproj/xcuserdata/
+WeChatPlugin/Class/Utils/WCPluginObfuscation.private.h
 
 ## Build generated
 build/

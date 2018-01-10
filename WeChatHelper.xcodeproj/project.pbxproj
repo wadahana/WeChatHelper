@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C5793DD1FFE8BED00074669 /* WCPluginRedEnvelopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5793DB1FFE8BED00074669 /* WCPluginRedEnvelopViewController.m */; };
+		1C5793DE1FFE8BED00074669 /* WCPluginRedEnvelopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5793DC1FFE8BED00074669 /* WCPluginRedEnvelopViewController.h */; };
+		1C5793E11FFE8C6F00074669 /* WCPluginAccountViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5793DF1FFE8C6F00074669 /* WCPluginAccountViewController.h */; };
+		1C5793E21FFE8C6F00074669 /* WCPluginAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5793E01FFE8C6F00074669 /* WCPluginAccountViewController.m */; };
+		1C5793E51FFE8E0200074669 /* WCPluginHiddenViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5793E31FFE8E0200074669 /* WCPluginHiddenViewController.h */; };
+		1C5793E61FFE8E0200074669 /* WCPluginHiddenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5793E41FFE8E0200074669 /* WCPluginHiddenViewController.m */; };
 		1C9537741FEDFB7800B87B01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537731FEDFB7800B87B01 /* AppDelegate.m */; };
 		1C95377C1FEDFB7800B87B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C95377B1FEDFB7800B87B01 /* Assets.xcassets */; };
 		1C9537821FEDFB7800B87B01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537811FEDFB7800B87B01 /* main.m */; };
@@ -31,11 +37,9 @@
 		1C9537D11FEE001400B87B01 /* WCPluginUIHijack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537C51FEE001400B87B01 /* WCPluginUIHijack.m */; };
 		1C9537D21FEE001400B87B01 /* NSBundle+WCPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537C71FEE001400B87B01 /* NSBundle+WCPlugin.h */; };
 		1C9537D31FEE001400B87B01 /* WCPluginMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537C81FEE001400B87B01 /* WCPluginMethodSwizzling.h */; };
-		1C9537D41FEE001400B87B01 /* WCPluginDBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537C91FEE001400B87B01 /* WCPluginDBHelper.h */; };
 		1C9537D51FEE001400B87B01 /* WCPluginDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537CA1FEE001400B87B01 /* WCPluginDefine.h */; };
 		1C9537D61FEE001400B87B01 /* NSBundle+WCPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537CB1FEE001400B87B01 /* NSBundle+WCPlugin.m */; };
 		1C9537D71FEE001400B87B01 /* WCPluginMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537CC1FEE001400B87B01 /* WCPluginMethodSwizzling.m */; };
-		1C9537D81FEE001400B87B01 /* WCPluginDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537CD1FEE001400B87B01 /* WCPluginDBHelper.m */; };
 		1C9537E11FEE005600B87B01 /* WCPluginRightSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537D91FEE005500B87B01 /* WCPluginRightSwitchTableViewCell.m */; };
 		1C9537E21FEE005600B87B01 /* WCPluginAboutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9537DA1FEE005500B87B01 /* WCPluginAboutViewController.h */; };
 		1C9537E31FEE005600B87B01 /* WCPluginAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537DB1FEE005500B87B01 /* WCPluginAboutViewController.m */; };
@@ -73,6 +77,22 @@
 		1C9538231FEE00CC00B87B01 /* SWCellScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9538061FEE00CC00B87B01 /* SWCellScrollView.h */; };
 		1C9538241FEE00CC00B87B01 /* SWUtilityButtonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9538071FEE00CC00B87B01 /* SWUtilityButtonView.h */; };
 		1C9538251FEE00CC00B87B01 /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9538081FEE00CC00B87B01 /* SWTableViewCell.m */; };
+		1CFC95FB2003B91000865AB9 /* WCPluginContactSelectViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFC95F92003B91000865AB9 /* WCPluginContactSelectViewController.h */; };
+		1CFC95FC2003B91000865AB9 /* WCPluginContactSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC95FA2003B91000865AB9 /* WCPluginContactSelectViewController.m */; };
+		1CFC95FF2003C56900865AB9 /* MMUICommonUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFC95FE2003C56900865AB9 /* MMUICommonUtil.h */; };
+		1CFC96022003C6BB00865AB9 /* CBaseContact.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFC96002003C6BA00865AB9 /* CBaseContact.h */; };
+		1CFC96032003C6BB00865AB9 /* CContact.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFC96012003C6BB00865AB9 /* CContact.h */; };
+		1CFC96082003CA5C00865AB9 /* ContactSelectViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFC96052003CA5C00865AB9 /* ContactSelectViewDelegate.h */; };
+		1CFC96092003CA5C00865AB9 /* MMServiceCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFC96062003CA5C00865AB9 /* MMServiceCenter.h */; };
+		1CFC960A2003CA5C00865AB9 /* MMUIViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFC96072003CA5C00865AB9 /* MMUIViewControllerDelegate.h */; };
+		1CFC960C2003CC2800865AB9 /* CDStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFC960B2003CC2800865AB9 /* CDStructures.h */; };
+		1CFC960F2005012E00865AB9 /* WCPluginDataHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFC960D2005012E00865AB9 /* WCPluginDataHelper.h */; };
+		1CFC96102005012E00865AB9 /* WCPluginDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC960E2005012E00865AB9 /* WCPluginDataHelper.m */; };
+		1CFC96122005028B00865AB9 /* WCPluginObfuscation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFC96112005028B00865AB9 /* WCPluginObfuscation.h */; };
+		1CFC961420052C3B00865AB9 /* ContactSelectView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFC961320052C3B00865AB9 /* ContactSelectView.h */; };
+		1CFC961620052C6E00865AB9 /* MMSearchBarDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFC961520052C6E00865AB9 /* MMSearchBarDelegate.h */; };
+		1CFC961820052C9F00865AB9 /* WCActionSheetDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFC961720052C9F00865AB9 /* WCActionSheetDelegate.h */; };
+		1CFC961A20052CC400865AB9 /* ContactsDataLogicDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFC961920052CC400865AB9 /* ContactsDataLogicDelegate.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +120,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C5793DB1FFE8BED00074669 /* WCPluginRedEnvelopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginRedEnvelopViewController.m; sourceTree = "<group>"; };
+		1C5793DC1FFE8BED00074669 /* WCPluginRedEnvelopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginRedEnvelopViewController.h; sourceTree = "<group>"; };
+		1C5793DF1FFE8C6F00074669 /* WCPluginAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginAccountViewController.h; sourceTree = "<group>"; };
+		1C5793E01FFE8C6F00074669 /* WCPluginAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginAccountViewController.m; sourceTree = "<group>"; };
+		1C5793E31FFE8E0200074669 /* WCPluginHiddenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPluginHiddenViewController.h; sourceTree = "<group>"; };
+		1C5793E41FFE8E0200074669 /* WCPluginHiddenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPluginHiddenViewController.m; sourceTree = "<group>"; };
 		1C95376F1FEDFB7800B87B01 /* WeChatHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9537721FEDFB7800B87B01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1C9537731FEDFB7800B87B01 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -128,11 +154,9 @@
 		1C9537C51FEE001400B87B01 /* WCPluginUIHijack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginUIHijack.m; sourceTree = "<group>"; };
 		1C9537C71FEE001400B87B01 /* NSBundle+WCPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+WCPlugin.h"; sourceTree = "<group>"; };
 		1C9537C81FEE001400B87B01 /* WCPluginMethodSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginMethodSwizzling.h; sourceTree = "<group>"; };
-		1C9537C91FEE001400B87B01 /* WCPluginDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginDBHelper.h; sourceTree = "<group>"; };
 		1C9537CA1FEE001400B87B01 /* WCPluginDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginDefine.h; sourceTree = "<group>"; };
 		1C9537CB1FEE001400B87B01 /* NSBundle+WCPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+WCPlugin.m"; sourceTree = "<group>"; };
 		1C9537CC1FEE001400B87B01 /* WCPluginMethodSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginMethodSwizzling.m; sourceTree = "<group>"; };
-		1C9537CD1FEE001400B87B01 /* WCPluginDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginDBHelper.m; sourceTree = "<group>"; };
 		1C9537D91FEE005500B87B01 /* WCPluginRightSwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginRightSwitchTableViewCell.m; sourceTree = "<group>"; };
 		1C9537DA1FEE005500B87B01 /* WCPluginAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginAboutViewController.h; sourceTree = "<group>"; };
 		1C9537DB1FEE005500B87B01 /* WCPluginAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginAboutViewController.m; sourceTree = "<group>"; };
@@ -170,6 +194,23 @@
 		1C9538061FEE00CC00B87B01 /* SWCellScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCellScrollView.h; sourceTree = "<group>"; };
 		1C9538071FEE00CC00B87B01 /* SWUtilityButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUtilityButtonView.h; sourceTree = "<group>"; };
 		1C9538081FEE00CC00B87B01 /* SWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTableViewCell.m; sourceTree = "<group>"; };
+		1CFC95F92003B91000865AB9 /* WCPluginContactSelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPluginContactSelectViewController.h; sourceTree = "<group>"; };
+		1CFC95FA2003B91000865AB9 /* WCPluginContactSelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPluginContactSelectViewController.m; sourceTree = "<group>"; };
+		1CFC95FE2003C56900865AB9 /* MMUICommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUICommonUtil.h; sourceTree = "<group>"; };
+		1CFC96002003C6BA00865AB9 /* CBaseContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBaseContact.h; sourceTree = "<group>"; };
+		1CFC96012003C6BB00865AB9 /* CContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CContact.h; sourceTree = "<group>"; };
+		1CFC96042003CA2000865AB9 /* WeChatHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeChatHeader.h; sourceTree = "<group>"; };
+		1CFC96052003CA5C00865AB9 /* ContactSelectViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactSelectViewDelegate.h; sourceTree = "<group>"; };
+		1CFC96062003CA5C00865AB9 /* MMServiceCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMServiceCenter.h; sourceTree = "<group>"; };
+		1CFC96072003CA5C00865AB9 /* MMUIViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUIViewControllerDelegate.h; sourceTree = "<group>"; };
+		1CFC960B2003CC2800865AB9 /* CDStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDStructures.h; sourceTree = "<group>"; };
+		1CFC960D2005012E00865AB9 /* WCPluginDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginDataHelper.h; sourceTree = "<group>"; };
+		1CFC960E2005012E00865AB9 /* WCPluginDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginDataHelper.m; sourceTree = "<group>"; };
+		1CFC96112005028B00865AB9 /* WCPluginObfuscation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginObfuscation.h; sourceTree = "<group>"; };
+		1CFC961320052C3B00865AB9 /* ContactSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactSelectView.h; sourceTree = "<group>"; };
+		1CFC961520052C6E00865AB9 /* MMSearchBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSearchBarDelegate.h; sourceTree = "<group>"; };
+		1CFC961720052C9F00865AB9 /* WCActionSheetDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCActionSheetDelegate.h; sourceTree = "<group>"; };
+		1CFC961920052CC400865AB9 /* ContactsDataLogicDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsDataLogicDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +271,7 @@
 		1C95378E1FEDFBEF00B87B01 /* WeChatPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				1CFC95FD2003C56900865AB9 /* WeChatHeader */,
 				1C9537C01FEE001400B87B01 /* Class */,
 				1C9537A81FEDFE3B00B87B01 /* ThirdParty */,
 				1C95379E1FEDFDF500B87B01 /* WCPluginPrefix.pch */,
@@ -295,6 +337,14 @@
 		1C9537C11FEE001400B87B01 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1C5793DF1FFE8C6F00074669 /* WCPluginAccountViewController.h */,
+				1C5793E01FFE8C6F00074669 /* WCPluginAccountViewController.m */,
+				1C5793DC1FFE8BED00074669 /* WCPluginRedEnvelopViewController.h */,
+				1C5793DB1FFE8BED00074669 /* WCPluginRedEnvelopViewController.m */,
+				1C5793E31FFE8E0200074669 /* WCPluginHiddenViewController.h */,
+				1C5793E41FFE8E0200074669 /* WCPluginHiddenViewController.m */,
+				1CFC95F92003B91000865AB9 /* WCPluginContactSelectViewController.h */,
+				1CFC95FA2003B91000865AB9 /* WCPluginContactSelectViewController.m */,
 				1C9537DA1FEE005500B87B01 /* WCPluginAboutViewController.h */,
 				1C9537DB1FEE005500B87B01 /* WCPluginAboutViewController.m */,
 				1C9537DC1FEE005600B87B01 /* WCPluginRightLabelTableViewCell.h */,
@@ -314,13 +364,14 @@
 		1C9537C61FEE001400B87B01 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1CFC96112005028B00865AB9 /* WCPluginObfuscation.h */,
 				1C9537CA1FEE001400B87B01 /* WCPluginDefine.h */,
 				1C9537C71FEE001400B87B01 /* NSBundle+WCPlugin.h */,
 				1C9537CB1FEE001400B87B01 /* NSBundle+WCPlugin.m */,
 				1C9537C81FEE001400B87B01 /* WCPluginMethodSwizzling.h */,
 				1C9537CC1FEE001400B87B01 /* WCPluginMethodSwizzling.m */,
-				1C9537C91FEE001400B87B01 /* WCPluginDBHelper.h */,
-				1C9537CD1FEE001400B87B01 /* WCPluginDBHelper.m */,
+				1CFC960D2005012E00865AB9 /* WCPluginDataHelper.h */,
+				1CFC960E2005012E00865AB9 /* WCPluginDataHelper.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -375,6 +426,25 @@
 			path = SWTableViewCell;
 			sourceTree = "<group>";
 		};
+		1CFC95FD2003C56900865AB9 /* WeChatHeader */ = {
+			isa = PBXGroup;
+			children = (
+				1CFC961920052CC400865AB9 /* ContactsDataLogicDelegate.h */,
+				1CFC961720052C9F00865AB9 /* WCActionSheetDelegate.h */,
+				1CFC961520052C6E00865AB9 /* MMSearchBarDelegate.h */,
+				1CFC961320052C3B00865AB9 /* ContactSelectView.h */,
+				1CFC960B2003CC2800865AB9 /* CDStructures.h */,
+				1CFC96052003CA5C00865AB9 /* ContactSelectViewDelegate.h */,
+				1CFC96062003CA5C00865AB9 /* MMServiceCenter.h */,
+				1CFC96072003CA5C00865AB9 /* MMUIViewControllerDelegate.h */,
+				1CFC96002003C6BA00865AB9 /* CBaseContact.h */,
+				1CFC96012003C6BB00865AB9 /* CContact.h */,
+				1CFC95FE2003C56900865AB9 /* MMUICommonUtil.h */,
+				1CFC96042003CA2000865AB9 /* WeChatHeader.h */,
+			);
+			path = WeChatHeader;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -384,7 +454,11 @@
 			files = (
 				1C95380D1FEE00CC00B87B01 /* MBProgressHUD+WSPXMBProgressHUDUtil.h in Headers */,
 				1C95381A1FEE00CC00B87B01 /* SWUtilityButtonTapGestureRecognizer.h in Headers */,
+				1CFC96122005028B00865AB9 /* WCPluginObfuscation.h in Headers */,
 				1C9537E21FEE005600B87B01 /* WCPluginAboutViewController.h in Headers */,
+				1CFC960A2003CA5C00865AB9 /* MMUIViewControllerDelegate.h in Headers */,
+				1C5793E11FFE8C6F00074669 /* WCPluginAccountViewController.h in Headers */,
+				1CFC95FB2003B91000865AB9 /* WCPluginContactSelectViewController.h in Headers */,
 				1C95380F1FEE00CC00B87B01 /* FMDatabase.h in Headers */,
 				1C9538241FEE00CC00B87B01 /* SWUtilityButtonView.h in Headers */,
 				1C95380B1FEE00CC00B87B01 /* MBProgressHUDManager.h in Headers */,
@@ -394,22 +468,34 @@
 				1C95381F1FEE00CC00B87B01 /* SWTableViewCell.h in Headers */,
 				1C9537D51FEE001400B87B01 /* WCPluginDefine.h in Headers */,
 				1C9537D01FEE001400B87B01 /* UIView+WCPlugin.h in Headers */,
+				1CFC960C2003CC2800865AB9 /* CDStructures.h in Headers */,
 				1C9537E71FEE005600B87B01 /* WCPluginRightSwitchTableViewCell.h in Headers */,
+				1CFC961A20052CC400865AB9 /* ContactsDataLogicDelegate.h in Headers */,
 				1C9537A01FEDFDF500B87B01 /* WCPluginPrefix.pch in Headers */,
+				1CFC961620052C6E00865AB9 /* MMSearchBarDelegate.h in Headers */,
 				1C9537D31FEE001400B87B01 /* WCPluginMethodSwizzling.h in Headers */,
-				1C9537D41FEE001400B87B01 /* WCPluginDBHelper.h in Headers */,
 				1C9538121FEE00CC00B87B01 /* FMDatabasePool.h in Headers */,
+				1CFC96082003CA5C00865AB9 /* ContactSelectViewDelegate.h in Headers */,
+				1CFC96032003C6BB00865AB9 /* CContact.h in Headers */,
 				1C9538231FEE00CC00B87B01 /* SWCellScrollView.h in Headers */,
 				1C9537CF1FEE001400B87B01 /* WCPluginUIHijack.h in Headers */,
+				1CFC96092003CA5C00865AB9 /* MMServiceCenter.h in Headers */,
 				1C95381D1FEE00CC00B87B01 /* SWLongPressGestureRecognizer.h in Headers */,
 				1C9538171FEE00CC00B87B01 /* FMDatabaseAdditions.h in Headers */,
+				1CFC95FF2003C56900865AB9 /* MMUICommonUtil.h in Headers */,
 				1C95380C1FEE00CC00B87B01 /* MBProgressHUD.h in Headers */,
 				1C9537D21FEE001400B87B01 /* NSBundle+WCPlugin.h in Headers */,
 				1C9537911FEDFBEF00B87B01 /* WeChatPlugin.h in Headers */,
+				1C5793DE1FFE8BED00074669 /* WCPluginRedEnvelopViewController.h in Headers */,
 				1C9538161FEE00CC00B87B01 /* FMDB.h in Headers */,
+				1C5793E51FFE8E0200074669 /* WCPluginHiddenViewController.h in Headers */,
 				1C9537B11FEDFE3B00B87B01 /* fishhook.h in Headers */,
+				1CFC961820052C9F00865AB9 /* WCActionSheetDelegate.h in Headers */,
 				1C9537B51FEDFF0B00B87B01 /* WCPAntiDebugHelper.h in Headers */,
+				1CFC96022003C6BB00865AB9 /* CBaseContact.h in Headers */,
+				1CFC960F2005012E00865AB9 /* WCPluginDataHelper.h in Headers */,
 				1C9537E41FEE005600B87B01 /* WCPluginRightLabelTableViewCell.h in Headers */,
+				1CFC961420052C3B00865AB9 /* ContactSelectView.h in Headers */,
 				1C9538151FEE00CC00B87B01 /* FMDatabaseQueue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,27 +633,31 @@
 				1C9538251FEE00CC00B87B01 /* SWTableViewCell.m in Sources */,
 				1C9538201FEE00CC00B87B01 /* SWUtilityButtonTapGestureRecognizer.m in Sources */,
 				1C95380A1FEE00CC00B87B01 /* MBProgressHUD+WSPXMBProgressHUDUtil.m in Sources */,
+				1C5793DD1FFE8BED00074669 /* WCPluginRedEnvelopViewController.m in Sources */,
 				1C9538181FEE00CC00B87B01 /* FMDatabasePool.m in Sources */,
 				1C9537D61FEE001400B87B01 /* NSBundle+WCPlugin.m in Sources */,
+				1C5793E21FFE8C6F00074669 /* WCPluginAccountViewController.m in Sources */,
 				1C9538141FEE00CC00B87B01 /* FMDatabase.m in Sources */,
 				1C9537E51FEE005600B87B01 /* WCPluginRightLabelTableViewCell.m in Sources */,
 				1C9538131FEE00CC00B87B01 /* FMDatabaseAdditions.m in Sources */,
+				1C5793E61FFE8E0200074669 /* WCPluginHiddenViewController.m in Sources */,
 				1C9537D71FEE001400B87B01 /* WCPluginMethodSwizzling.m in Sources */,
 				1C9537E11FEE005600B87B01 /* WCPluginRightSwitchTableViewCell.m in Sources */,
 				1C95381E1FEE00CC00B87B01 /* SWUtilityButtonView.m in Sources */,
 				1C9537D11FEE001400B87B01 /* WCPluginUIHijack.m in Sources */,
-				1C9537D81FEE001400B87B01 /* WCPluginDBHelper.m in Sources */,
 				1C9537CE1FEE001400B87B01 /* UIView+WCPlugin.m in Sources */,
 				1C95381B1FEE00CC00B87B01 /* SWCellScrollView.m in Sources */,
 				1C9538101FEE00CC00B87B01 /* FMDatabaseQueue.m in Sources */,
 				1C9537E81FEE005600B87B01 /* WCPluginSettingViewController.m in Sources */,
 				1C9538191FEE00CC00B87B01 /* FMResultSet.m in Sources */,
 				1C9538091FEE00CC00B87B01 /* MBProgressHUD.m in Sources */,
+				1CFC96102005012E00865AB9 /* WCPluginDataHelper.m in Sources */,
 				1C95380E1FEE00CC00B87B01 /* MBProgressHUDManager.m in Sources */,
 				1C9537E31FEE005600B87B01 /* WCPluginAboutViewController.m in Sources */,
 				1C9538221FEE00CC00B87B01 /* NSMutableArray+SWUtilityButtons.m in Sources */,
 				1C9537B01FEDFE3B00B87B01 /* fishhook.c in Sources */,
 				1C9537A11FEDFDF500B87B01 /* WeChatPlugin.m in Sources */,
+				1CFC95FC2003B91000865AB9 /* WCPluginContactSelectViewController.m in Sources */,
 				1C9538211FEE00CC00B87B01 /* SWLongPressGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -631,7 +721,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -680,7 +770,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -738,6 +828,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WeChatPlugin/WCPluginPrefix.pch;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/WeChatPlugin/WeChatHeader";
 				INFOPLIST_FILE = WeChatPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -769,6 +860,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WeChatPlugin/WCPluginPrefix.pch;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/WeChatPlugin/WeChatHeader";
 				INFOPLIST_FILE = WeChatPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

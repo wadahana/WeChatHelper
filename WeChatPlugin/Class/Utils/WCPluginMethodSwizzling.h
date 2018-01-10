@@ -25,9 +25,12 @@ BOOL WCPluginReplaceClassMethod(NSString * className, NSString * selectorName, I
 BOOL WCPluginReplaceInstanceMethod(NSString * className, NSString * selectorName, IMP metodImplement, NSString * methodSignature);
 
 
-inline static NSInvocation * WCPluginNewInvocation(Class clazz, SEL selector) {
+inline static NSInvocation * WCPluginNewInvocation(id obj, SEL selector) {
+    Class clazz = object_getClass(obj);
     NSMethodSignature * signature = [clazz instanceMethodSignatureForSelector:selector];
     NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
+    invocation.target = obj;
+    invocation.selector = selector;
     return invocation;
 }
 

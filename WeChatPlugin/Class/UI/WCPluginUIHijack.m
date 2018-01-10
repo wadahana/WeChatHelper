@@ -35,7 +35,6 @@ void WCPluginUIHijackStart() {
 
 static void __moreViewController_onShowPluginSetting(id this, SEL cmd) {
     NSLog(@"onShowPluginSetting -> ");
-    
     if ([this isKindOfClass:[UIViewController class]]) {
         UIViewController * moreViewController = (UIViewController *)this;
         WCPluginSettingViewController * controller = [[WCPluginSettingViewController alloc] initWithStyle:UITableViewStyleGrouped];

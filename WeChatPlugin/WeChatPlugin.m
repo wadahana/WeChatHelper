@@ -7,12 +7,19 @@
 //
 
 #import "WeChatPlugin.h"
+#import "WCPluginUIHijack.h"
+#import "WCPluginDataHelper.h"
 #import "Cycript/Cycript.h"
+
 
 @implementation WeChatPlugin
 
++ (void)hijack {
+    WCPluginDataHelperInit();
+    WCPluginUIHijackStart();
+}
 + (void)load {
-    
+    [self hijack];
     dispatch_async(dispatch_get_main_queue(), ^{
         CYListenServer(8899);
     });
