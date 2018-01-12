@@ -13,6 +13,8 @@
 		1C5793E21FFE8C6F00074669 /* WCPluginAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5793E01FFE8C6F00074669 /* WCPluginAccountViewController.m */; };
 		1C5793E51FFE8E0200074669 /* WCPluginHiddenViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5793E31FFE8E0200074669 /* WCPluginHiddenViewController.h */; };
 		1C5793E61FFE8E0200074669 /* WCPluginHiddenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5793E41FFE8E0200074669 /* WCPluginHiddenViewController.m */; };
+		1C6A1A8F2007C44800A51BB7 /* WCPluginContactHiddenHijack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A1A8E2007C44800A51BB7 /* WCPluginContactHiddenHijack.m */; };
+		1C6A1A932007C9FE00A51BB7 /* WCPluginUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A1A922007C9FE00A51BB7 /* WCPluginUtils.m */; };
 		1C9537741FEDFB7800B87B01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537731FEDFB7800B87B01 /* AppDelegate.m */; };
 		1C95377C1FEDFB7800B87B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C95377B1FEDFB7800B87B01 /* Assets.xcassets */; };
 		1C9537821FEDFB7800B87B01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537811FEDFB7800B87B01 /* main.m */; };
@@ -126,6 +128,10 @@
 		1C5793E01FFE8C6F00074669 /* WCPluginAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginAccountViewController.m; sourceTree = "<group>"; };
 		1C5793E31FFE8E0200074669 /* WCPluginHiddenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPluginHiddenViewController.h; sourceTree = "<group>"; };
 		1C5793E41FFE8E0200074669 /* WCPluginHiddenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPluginHiddenViewController.m; sourceTree = "<group>"; };
+		1C6A1A8E2007C44800A51BB7 /* WCPluginContactHiddenHijack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPluginContactHiddenHijack.m; sourceTree = "<group>"; };
+		1C6A1A902007C46400A51BB7 /* WCPluginContactHiddenHijack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPluginContactHiddenHijack.h; sourceTree = "<group>"; };
+		1C6A1A922007C9FE00A51BB7 /* WCPluginUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPluginUtils.m; sourceTree = "<group>"; };
+		1C6A1A942007CA6D00A51BB7 /* WCPluginUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPluginUtils.h; sourceTree = "<group>"; };
 		1C95376F1FEDFB7800B87B01 /* WeChatHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9537721FEDFB7800B87B01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1C9537731FEDFB7800B87B01 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -328,8 +334,10 @@
 		1C9537C01FEE001400B87B01 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				1C9537C11FEE001400B87B01 /* UI */,
 				1C9537C61FEE001400B87B01 /* Utils */,
+				1C9537C11FEE001400B87B01 /* UI */,
+				1CFC961B2005DD6F00865AB9 /* ContactHidden */,
+				1CFC961C2005DD6F00865AB9 /* RedEnvelop */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -366,6 +374,8 @@
 			children = (
 				1CFC96112005028B00865AB9 /* WCPluginObfuscation.h */,
 				1C9537CA1FEE001400B87B01 /* WCPluginDefine.h */,
+				1C6A1A942007CA6D00A51BB7 /* WCPluginUtils.h */,
+				1C6A1A922007C9FE00A51BB7 /* WCPluginUtils.m */,
 				1C9537C71FEE001400B87B01 /* NSBundle+WCPlugin.h */,
 				1C9537CB1FEE001400B87B01 /* NSBundle+WCPlugin.m */,
 				1C9537C81FEE001400B87B01 /* WCPluginMethodSwizzling.h */,
@@ -443,6 +453,22 @@
 				1CFC96042003CA2000865AB9 /* WeChatHeader.h */,
 			);
 			path = WeChatHeader;
+			sourceTree = "<group>";
+		};
+		1CFC961B2005DD6F00865AB9 /* ContactHidden */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A1A902007C46400A51BB7 /* WCPluginContactHiddenHijack.h */,
+				1C6A1A8E2007C44800A51BB7 /* WCPluginContactHiddenHijack.m */,
+			);
+			path = ContactHidden;
+			sourceTree = "<group>";
+		};
+		1CFC961C2005DD6F00865AB9 /* RedEnvelop */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RedEnvelop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -634,6 +660,7 @@
 				1C9538201FEE00CC00B87B01 /* SWUtilityButtonTapGestureRecognizer.m in Sources */,
 				1C95380A1FEE00CC00B87B01 /* MBProgressHUD+WSPXMBProgressHUDUtil.m in Sources */,
 				1C5793DD1FFE8BED00074669 /* WCPluginRedEnvelopViewController.m in Sources */,
+				1C6A1A8F2007C44800A51BB7 /* WCPluginContactHiddenHijack.m in Sources */,
 				1C9538181FEE00CC00B87B01 /* FMDatabasePool.m in Sources */,
 				1C9537D61FEE001400B87B01 /* NSBundle+WCPlugin.m in Sources */,
 				1C5793E21FFE8C6F00074669 /* WCPluginAccountViewController.m in Sources */,
@@ -659,6 +686,7 @@
 				1C9537A11FEDFDF500B87B01 /* WeChatPlugin.m in Sources */,
 				1CFC95FC2003B91000865AB9 /* WCPluginContactSelectViewController.m in Sources */,
 				1C9538211FEE00CC00B87B01 /* SWLongPressGestureRecognizer.m in Sources */,
+				1C6A1A932007C9FE00A51BB7 /* WCPluginUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

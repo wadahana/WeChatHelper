@@ -119,7 +119,7 @@ static NSInteger sRedEnvelopDelay;
 
 static BOOL sHiddenEnabled;
 static NSString * sHiddenPasswd;
-static NSArray<NSString *> * sHiddenUserList;
+static NSDictionary * sHiddenUserList;
 
 static NSInteger sAddFriendSex;
 static NSInteger sAddFriendOpt;
@@ -142,7 +142,7 @@ static void __WCPluginSettingInit() {
     
     sHiddenEnabled = [[NSUserDefaults standardUserDefaults] boolForKey:kWCPluginHiddenEnabled];
     sHiddenPasswd = [[NSUserDefaults standardUserDefaults] objectForKey:kWCPluginHiddenPasswd];
-    sHiddenUserList = [[NSUserDefaults standardUserDefaults] arrayForKey:kWCPluginHiddenUserList];
+    sHiddenUserList = [[NSUserDefaults standardUserDefaults] dictionaryForKey:kWCPluginHiddenUserList];
     
     NSInteger sex = [[NSUserDefaults standardUserDefaults] integerForKey:kWCPluginAddFriendSex];
     if (sex < 0 || sex > 2) {
@@ -260,14 +260,14 @@ void WCPluginSetHiddenPasswd(NSString * passwd) {
 
 #pragma mark - 隐藏好友名单
 
-NSArray<NSString *> * WCPluginGetHiddenUserList() {
-    if (sHiddenUserList && [sHiddenUserList isKindOfClass:[NSArray class]]) {
+NSDictionary * WCPluginGetHiddenUserList() {
+    if (sHiddenUserList && [sHiddenUserList isKindOfClass:[NSDictionary class]]) {
         return sHiddenUserList;
     }
     return nil;
 }
 
-BOOL WCPluginSetHiddenUserList(NSArray<NSString *>* list) {
+BOOL WCPluginSetHiddenUserList(NSDictionary * list) {
     if ([list count] > kWeChatPluginMaxHiddenContact) {
         return NO;
     }

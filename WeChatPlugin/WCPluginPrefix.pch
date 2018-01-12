@@ -12,7 +12,8 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
-#include "WCPluginDefine.h"
-#include "WCPluginObfuscation.h"
+#import "WCPluginObfuscation.h"
+#import "WCPluginDefine.h"
+
 
 #endif /* WCPluginPrefix_pch */

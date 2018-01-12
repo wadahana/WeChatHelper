@@ -12,6 +12,7 @@
 #import "WCPluginContactSelectViewController.h"
 #import "WCPluginMethodSwizzling.h"
 #import "WCPluginDataHelper.h"
+#import "WCPluginUtils.h"
 
 #import "MBProgressHUDManager.h"
 #import "SWTableViewCell.h"
@@ -60,7 +61,6 @@ static NSString * const kHiddenSelectViewCellIdendtifer = @"HiddenSelectViewCell
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self updateSelectView];
 }
 
 - (void)createTableViewCell {
@@ -83,17 +83,6 @@ static NSString * const kHiddenSelectViewCellIdendtifer = @"HiddenSelectViewCell
     self.selectViewCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 }
 
-- (void)updateSelectView {
-    if (!WCPluginGetHiddenEnabled() && self.selectView) {
-        MMServiceCenter * serviceCenter = [NSClassFromString(@"MMServiceCenter") defaultCenter];
-        id contactMgr = [serviceCenter getService:NSClassFromString(@"CContactMgr")];
-        NSArray<NSString *> * userList = WCPluginGetHiddenUserList();
-        for (NSString * name in userList) {
-            id contact = [contactMgr performSelector:@selector(getContactByName:) withObject:name];
-            [self.selectView performSelector:@selector(addSelect:) withObject:contact];
-        }
-    }
-}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -107,8 +96,8 @@ static NSString * const kHiddenSelectViewCellIdendtifer = @"HiddenSelectViewCell
             [self.hudManager showMessage:@"请先设置密码!" duration:kToastDuration];
             return;
         }
-        NSArray * list = WCPluginGetHiddenUserList();
-        if (!list || ![list isKindOfClass:[NSArray class]] || [list count] <= 0) {
+        NSDictionary * dict = WCPluginGetHiddenUserList();
+        if (!dict || ![dict isKindOfClass:[NSDictionary class]] || [dict count] <= 0) {
             sender.on = NO;
             [self.hudManager showMessage:@"请先设置要隐藏的好友!" duration:kToastDuration];
             return;
@@ -180,15 +169,17 @@ static NSString * const kHiddenSelectViewCellIdendtifer = @"HiddenSelectViewCell
         
         [alert setAlertViewStyle:UIAlertViewStylePlainTextInput];
         UITextField * textField = [alert textFieldAtIndex:0];
-        textField.keyboardType = UIKeyboardTypeNumberPad;
+        textField.keyboardType = UIKeyboardTypeASCIICapable;
         textField.placeholder = WCPluginGetHiddenPasswd();
         alert.tag = 100;
         [alert show];
     } else if (row == 2) {
-        NSArray<NSString *> * list = WCPluginGetHiddenUserList();
-        WCPluginContactSelectViewController * controller = [[WCPluginContactSelectViewController alloc] initWithType:kContactSelectTypeFriend userList:list];
+        NSDictionary * list = WCPluginGetHiddenUserList();
+        WCPluginContactSelectViewController * controller = [[WCPluginContactSelectViewController alloc] initWithType:kContactSelectTypeFriend userList:[list allKeys]];
+        controller.delegate = self;
         [self.navigationController pushViewController:controller animated:YES];
     }
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 #pragma mark - WCPluginContactSelectViewControllerDelegate
@@ -198,7 +189,11 @@ static NSString * const kHiddenSelectViewCellIdendtifer = @"HiddenSelectViewCell
 }
 
 - (void) onSelectDone:(NSArray<NSString *>*)userLsit {
-    WCPluginSetHiddenUserList(userLsit);
+    NSMutableDictionary * dict = [NSMutableDictionary new];
+    for (NSString * username in userLsit) {
+        [dict setObject:username forKey:username];
+    }
+    WCPluginSetHiddenUserList(dict);
     [self.navigationController popViewControllerAnimated:YES];
 }
 

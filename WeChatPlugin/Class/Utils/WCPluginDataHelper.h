@@ -51,8 +51,8 @@ void WCPluginSetHiddenPasswd(NSString * passwd);
 
 #pragma mark - 隐藏好友名单
 
-NSArray<NSString *> *WCPluginGetHiddenUserList();
-BOOL WCPluginSetHiddenUserList(NSArray<NSString *>* list);
+NSDictionary * WCPluginGetHiddenUserList();
+BOOL WCPluginSetHiddenUserList(NSDictionary * list);
 
 #pragma mark - 暴力加人性别类型
 

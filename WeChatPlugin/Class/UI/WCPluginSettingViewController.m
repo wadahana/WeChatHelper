@@ -12,6 +12,8 @@
 #import "WCPluginAccountViewController.h"
 #import "WCPluginHiddenViewController.h"
 #import "WCPluginContactSelectViewController.h"
+#import "WCPluginUtils.h"
+#import "WCPluginDataHelper.h"
 
 static NSString * kTableViewCellIdentifier = @"WCPluginSettingTableViewCellIdentifier";
 
@@ -23,7 +25,6 @@ static NSString * kTableViewCellIdentifier = @"WCPluginSettingTableViewCellIdent
 @property (nonatomic, strong) UITableViewCell * contactHiddenCell;
 @property (nonatomic, strong) NSMutableArray * cellArray;
 @property (nonatomic, strong) NSMutableArray * controllerArray;
-@property (nonatomic, assign) BOOL hiddenEnabled;
 @end
 
 @implementation WCPluginSettingViewController
@@ -39,8 +40,14 @@ static NSString * kTableViewCellIdentifier = @"WCPluginSettingTableViewCellIdent
     self.controllerArray = [NSMutableArray new];
     
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    self.hiddenEnabled = NO;// WCPluginGetHiddenEnabled();
+
     [self createTableViewCell];
+    [self refreshTableView];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self refreshTableView];
 }
 
 - (void)createTableViewCell {
@@ -49,32 +56,38 @@ static NSString * kTableViewCellIdentifier = @"WCPluginSettingTableViewCellIdent
     self.accountCell.textLabel.text = @"账号管理";
     self.accountCell.imageView.image = [UIImage imageNamed:@"MoreMyFavorites.png"];
     self.accountCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    [self.cellArray addObject:self.accountCell];
-    [self.controllerArray addObject:[WCPluginAccountViewController class]];
-    
+
     self.redEnvelopCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"settingCellIdentifier"];
     self.redEnvelopCell.textLabel.text = @"自动抢红包";
     self.redEnvelopCell.imageView.image = [UIImage imageNamed:@"MoreMyFavorites.png"];
     self.redEnvelopCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    [self.cellArray addObject:self.redEnvelopCell];
-    [self.controllerArray addObject:[WCPluginRedEnvelopViewController class]];
     
-    if (!self.hiddenEnabled) {
-        self.contactHiddenCell =[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"settingCellIdentifier"];
-        self.contactHiddenCell.textLabel.text = @"隐藏联系人";
-        self.contactHiddenCell.imageView.image = [UIImage imageNamed:@"MoreMyFavorites.png"];
-        self.contactHiddenCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        [self.cellArray addObject:self.contactHiddenCell];
-        [self.controllerArray addObject:[WCPluginHiddenViewController class]];
-    }
+    self.contactHiddenCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"settingCellIdentifier"];
+    self.contactHiddenCell.textLabel.text = @"隐藏联系人";
+    self.contactHiddenCell.imageView.image = [UIImage imageNamed:@"MoreMyFavorites.png"];
+    self.contactHiddenCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     self.aboutCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"settingCellIdentifier"];
     self.aboutCell.textLabel.text = @"关于";
     self.aboutCell.imageView.image = [UIImage imageNamed:@"MoreMyFavorites.png"];
     self.aboutCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+}
+
+- (void)refreshTableView {
+    
+    [self.cellArray removeAllObjects];
+    [self.controllerArray removeAllObjects];
+    
+    [self.cellArray addObject:self.accountCell];
+    [self.controllerArray addObject:[WCPluginAccountViewController class]];
+    [self.cellArray addObject:self.redEnvelopCell];
+    [self.controllerArray addObject:[WCPluginRedEnvelopViewController class]];
+    if (!WCPluginGetHiddenEnabled()) {
+        [self.cellArray addObject:self.contactHiddenCell];
+        [self.controllerArray addObject:[WCPluginHiddenViewController class]];
+    }
     [self.cellArray addObject:self.aboutCell];
     [self.controllerArray addObject:[WCPluginAboutViewController class]];
-
     [self.tableView reloadData];
 }
 
