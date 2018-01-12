@@ -11,6 +11,5 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString * kWCPluginSettingViewControllerRefreshNotification;
 
 #endif /* WCPluginUtils_h */
