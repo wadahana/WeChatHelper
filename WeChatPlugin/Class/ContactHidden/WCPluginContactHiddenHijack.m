@@ -75,7 +75,6 @@ static void __NewMainFrameViewController_MMVoiceSearchBar_textDidChange(id this,
                 __hudManager = [[MBProgressHUDManager alloc] initWithView:keyWindow];
             }
             [__hudManager showMessage:@"好友隐藏功能关闭" duration:kToastDuration];
-            [[NSNotificationCenter defaultCenter] postNotificationName:kWCPluginSettingViewControllerRefreshNotification object:nil];
         }
     }
     [this performSelector:@selector(ORIGMMVoiceSearchBar:textDidChange:) withObject:bar withObject:text];
