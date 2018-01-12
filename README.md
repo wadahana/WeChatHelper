@@ -15,6 +15,9 @@
 
 2. 修改Bundle ID和证书之后，用XCode直接运行或者打ipa包都可以。
 
+<div align=center>
+链接: <a href="https://pan.baidu.com/s/1smZmDCL">https://pan.baidu.com/s/1smZmDCL</a> 密码: 9rpr
+</div>
 ## 使用
 
 + 隐藏好友
