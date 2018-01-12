@@ -27,6 +27,7 @@
 		1C8ED43B2008FB340013ECED /* WCPluginRedEnvelopHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8ED4312008FB340013ECED /* WCPluginRedEnvelopHelper.m */; };
 		1C8ED43E200904B00013ECED /* WCPluginRedEnvelopHijack.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8ED43C200904B00013ECED /* WCPluginRedEnvelopHijack.h */; };
 		1C8ED43F200904B00013ECED /* WCPluginRedEnvelopHijack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8ED43D200904B00013ECED /* WCPluginRedEnvelopHijack.m */; };
+		1C8ED441200910E80013ECED /* MMTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8ED440200910E80013ECED /* MMTabBarController.h */; };
 		1C9537741FEDFB7800B87B01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537731FEDFB7800B87B01 /* AppDelegate.m */; };
 		1C95377C1FEDFB7800B87B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C95377B1FEDFB7800B87B01 /* Assets.xcassets */; };
 		1C9537821FEDFB7800B87B01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537811FEDFB7800B87B01 /* main.m */; };
@@ -156,6 +157,7 @@
 		1C8ED4312008FB340013ECED /* WCPluginRedEnvelopHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginRedEnvelopHelper.m; sourceTree = "<group>"; };
 		1C8ED43C200904B00013ECED /* WCPluginRedEnvelopHijack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPluginRedEnvelopHijack.h; sourceTree = "<group>"; };
 		1C8ED43D200904B00013ECED /* WCPluginRedEnvelopHijack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPluginRedEnvelopHijack.m; sourceTree = "<group>"; };
+		1C8ED440200910E80013ECED /* MMTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTabBarController.h; sourceTree = "<group>"; };
 		1C95376F1FEDFB7800B87B01 /* WeChatHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9537721FEDFB7800B87B01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1C9537731FEDFB7800B87B01 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -463,17 +465,18 @@
 		1CFC95FD2003C56900865AB9 /* WeChatHeader */ = {
 			isa = PBXGroup;
 			children = (
-				1CFC961920052CC400865AB9 /* ContactsDataLogicDelegate.h */,
-				1CFC961720052C9F00865AB9 /* WCActionSheetDelegate.h */,
-				1CFC961520052C6E00865AB9 /* MMSearchBarDelegate.h */,
-				1CFC961320052C3B00865AB9 /* ContactSelectView.h */,
 				1CFC960B2003CC2800865AB9 /* CDStructures.h */,
-				1CFC96052003CA5C00865AB9 /* ContactSelectViewDelegate.h */,
+				1C8ED440200910E80013ECED /* MMTabBarController.h */,
+				1CFC961520052C6E00865AB9 /* MMSearchBarDelegate.h */,
 				1CFC96062003CA5C00865AB9 /* MMServiceCenter.h */,
 				1CFC96072003CA5C00865AB9 /* MMUIViewControllerDelegate.h */,
+				1CFC95FE2003C56900865AB9 /* MMUICommonUtil.h */,
 				1CFC96002003C6BA00865AB9 /* CBaseContact.h */,
 				1CFC96012003C6BB00865AB9 /* CContact.h */,
-				1CFC95FE2003C56900865AB9 /* MMUICommonUtil.h */,
+				1CFC961920052CC400865AB9 /* ContactsDataLogicDelegate.h */,
+				1CFC961320052C3B00865AB9 /* ContactSelectView.h */,
+				1CFC96052003CA5C00865AB9 /* ContactSelectViewDelegate.h */,
+				1CFC961720052C9F00865AB9 /* WCActionSheetDelegate.h */,
 				1CFC96042003CA2000865AB9 /* WeChatHeader.h */,
 			);
 			path = WeChatHeader;
@@ -546,6 +549,7 @@
 				1C8ED4372008FB340013ECED /* WCPluginRedEnvelopHelper.h in Headers */,
 				1C95381D1FEE00CC00B87B01 /* SWLongPressGestureRecognizer.h in Headers */,
 				1C9538171FEE00CC00B87B01 /* FMDatabaseAdditions.h in Headers */,
+				1C8ED441200910E80013ECED /* MMTabBarController.h in Headers */,
 				1CFC95FF2003C56900865AB9 /* MMUICommonUtil.h in Headers */,
 				1C8ED4382008FB340013ECED /* WCPluginRedEnvelopParam.h in Headers */,
 				1C95380C1FEE00CC00B87B01 /* MBProgressHUD.h in Headers */,

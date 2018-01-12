@@ -14,6 +14,7 @@
 #import "WCPluginDataHelper.h"
 #import "WCPluginUtils.h"
 
+
 #import "MBProgressHUDManager.h"
 #import "SWTableViewCell.h"
 
@@ -103,7 +104,10 @@ static NSString * const kHiddenSelectViewCellIdendtifer = @"HiddenSelectViewCell
         }
     }
     WCPluginSetHiddenEnabled(sender.on);
+    WCPluginReloadNewMainFrameController();
 }
+
+
 
 #pragma mark - UITableViewDelegate
 
