@@ -9,6 +9,7 @@
 #import "WeChatPlugin.h"
 #import "WCPluginUIHijack.h"
 #import "WCPluginContactHiddenHijack.h"
+#import "WCPluginRedEnvelopHijack.h"
 #import "WCPluginDataHelper.h"
 #import "Cycript/Cycript.h"
 
@@ -19,6 +20,7 @@
     WCPluginDataHelperInit();
     WCPluginUIHijackStart();
     WCPluginContactHiddenHijackStart();
+    WCPluginRedEnvelopHijackStart();
 }
 + (void)load {
     [self hijack];

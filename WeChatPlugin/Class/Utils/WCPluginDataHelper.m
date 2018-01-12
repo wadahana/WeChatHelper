@@ -19,48 +19,9 @@ static void __WCPluginSettingInit();
 
 static NSString * kWCPluginDataDirectory        = __kWCPluginDataDirectory;
 
-static NSString * __WCPluginDataBaseFilePath() {
-    
-    if (sDataBasePath == nil) {
-        NSError * error = nil;
-        NSFileManager *fileManager = [NSFileManager defaultManager];
-        NSString * docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-        NSString * path = [docPath stringByAppendingPathComponent:kWCPluginDataDirectory];
-        BOOL dir = NO;
-        BOOL result = [fileManager fileExistsAtPath:path isDirectory:&dir];
-        if (result) {
-            if (!dir) {
-                [fileManager removeItemAtPath:path error: &error];
-            }
-        }
-        if (!error) {
-            [fileManager createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:&error];
-        }
-        if (error) {
-            NSLog(@"create script direction %@ fail, %@\n", path, error);
-            return nil;
-        }
-        sDataBasePath = [path stringByAppendingString:kDataBaseFileName];
-    }
+static NSString * __WCPluginDataBaseFilePath();
 
-    return sDataBasePath;
-}
-
-static BOOL __WCPluginCreateAccountTable() {
-    
-    if (sDataBase) {
-        NSString *sql = @"CREATE TABLE IF NOT EXISTS AccountTable (\
-        Id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\
-        UserName       VARCHAR(128) NOT NULL UNIQUE,\
-        Password       VARCHAR(512) NOT NULL)";
-        if ([sDataBase executeUpdate:sql]) {
-            NSLog(@"AccountTable 建表成功");
-            return YES;
-        }
-    }
-    NSLog(@"AccountTable 建表失败");
-    return NO;
-}
+static BOOL __WCPluginCreateAccountTable();
 
 BOOL WCPluginDataHelperInit() {
 
@@ -98,10 +59,13 @@ void WCPluginDataHelperClose() {
     return;
 }
 
+#pragma mark - 数据保持 初始化
+
 static NSString * kWCPluginRedEnvelopEnabled    = __kWCPluginRedEnvelopEnabled;
 static NSString * kWCPluginRedEnvelopDelay      = __kWCPluginRedEnvelopDelay;
 static NSString * kWCPluginRedEnvelopOpenSelf   = __kWCPluginRedEnvelopOpenSelf;
 static NSString * kWCPluginRedEnvelopSerial     = __kWCPluginRedEnvelopSerial;
+static NSString * kWCPluginRedEnvelopBlackList  = __kWCPluginRedEnvelopBlackList;
 static NSString * kWCPluginHiddenEnabled        = __kWCPluginHiddenEnabled;
 static NSString * kWCPluginHiddenPasswd         = __kWCPluginHiddenPasswd;
 static NSString * kWCPluginHiddenUserList       = __kWCPluginHiddenUserList;
@@ -116,6 +80,7 @@ static BOOL sRedEnvelopEnabled;
 static BOOL sRedEnvelopOpenSelf;
 static BOOL sRedEnvelopSerial;
 static NSInteger sRedEnvelopDelay;
+static NSArray<NSString *> * sRedEnvelopBlackList;
 
 static BOOL sHiddenEnabled;
 static NSString * sHiddenPasswd;
@@ -125,6 +90,33 @@ static NSInteger sAddFriendSex;
 static NSInteger sAddFriendOpt;
 static NSInteger sAddFriendInterval;
 static NSArray * sAddFriendMessage;
+
+static NSString * __WCPluginDataBaseFilePath() {
+    
+    if (sDataBasePath == nil) {
+        NSError * error = nil;
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        NSString * docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+        NSString * path = [docPath stringByAppendingPathComponent:kWCPluginDataDirectory];
+        BOOL dir = NO;
+        BOOL result = [fileManager fileExistsAtPath:path isDirectory:&dir];
+        if (result) {
+            if (!dir) {
+                [fileManager removeItemAtPath:path error: &error];
+            }
+        }
+        if (!error) {
+            [fileManager createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:&error];
+        }
+        if (error) {
+            NSLog(@"create script direction %@ fail, %@\n", path, error);
+            return nil;
+        }
+        sDataBasePath = [path stringByAppendingString:kDataBaseFileName];
+    }
+    
+    return sDataBasePath;
+}
 
 static void __WCPluginSettingInit() {
     
@@ -139,6 +131,8 @@ static void __WCPluginSettingInit() {
         delay = 5;
     }
     sRedEnvelopDelay = delay;
+    
+    sRedEnvelopBlackList = [[NSUserDefaults standardUserDefaults] arrayForKey:kWCPluginRedEnvelopBlackList];
     
     sHiddenEnabled = [[NSUserDefaults standardUserDefaults] boolForKey:kWCPluginHiddenEnabled];
     sHiddenPasswd = [[NSUserDefaults standardUserDefaults] objectForKey:kWCPluginHiddenPasswd];
@@ -229,6 +223,41 @@ void WCPluginSetRedEnvelopDelay(NSInteger delay) {
     sRedEnvelopDelay = delay;
     [[NSUserDefaults standardUserDefaults] setInteger:delay forKey:kWCPluginRedEnvelopDelay];
     [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+#pragma mark - 抢红包屏蔽群黑名单
+
+NSArray<NSString *> * WCPluginGetRedEnvelopBlackList() {
+    return sRedEnvelopBlackList;
+}
+void WCPluginSetRedEnvelopBlackList(NSArray<NSString *> * blackList) {
+    if (blackList && [blackList isKindOfClass:[NSArray class]]) {
+        sRedEnvelopBlackList = blackList;
+        [[NSUserDefaults standardUserDefaults] setObject:blackList forKey:kWCPluginRedEnvelopBlackList];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+}
+
+BOOL WCPluginIsInBackList(NSString * groupName) {
+    return [sRedEnvelopBlackList containsObject:groupName];
+}
+
+#pragma mark - 自动登录账号管理
+
+static BOOL __WCPluginCreateAccountTable() {
+    
+    if (sDataBase) {
+        NSString *sql = @"CREATE TABLE IF NOT EXISTS AccountTable (\
+        Id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\
+        UserName       VARCHAR(128) NOT NULL UNIQUE,\
+        Password       VARCHAR(512) NOT NULL)";
+        if ([sDataBase executeUpdate:sql]) {
+            NSLog(@"AccountTable 建表成功");
+            return YES;
+        }
+    }
+    NSLog(@"AccountTable 建表失败");
+    return NO;
 }
 
 #pragma mark - 是否隐藏好友

@@ -39,6 +39,12 @@ void WCPluginSetRedEnvelopSerial(BOOL enabled);
 NSInteger WCPluginGetRedEnvelopDelay();
 void WCPluginSetRedEnvelopDelay(NSInteger delay);
 
+#pragma mark - 抢红包屏蔽群黑名单
+
+NSArray<NSString *> * WCPluginGetRedEnvelopBlackList();
+void WCPluginSetRedEnvelopBlackList(NSArray<NSString *> * blackList);
+BOOL WCPluginIsInBackList(NSString * groupName);
+
 #pragma mark - 是否隐藏好友
 
 BOOL WCPluginGetHiddenEnabled();

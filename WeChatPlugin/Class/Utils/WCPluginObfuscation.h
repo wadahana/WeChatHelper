@@ -13,6 +13,7 @@
 #define __kWCPluginRedEnvelopDelay      (@"kWCPluginRedEnvelopDelay")
 #define __kWCPluginRedEnvelopOpenSelf   (@"kWCPluginRedEnvelopOpenSelf")
 #define __kWCPluginRedEnvelopSerial     (@"kWCPluginRedEnvelopSerial")
+#define __kWCPluginRedEnvelopBlackList  (@"kWCPluginRedEnvelopBlackList")
 #define __kWCPluginHiddenEnabled        (@"kWCPluginHiddenEnabled")
 #define __kWCPluginHiddenPasswd         (@"kWCPluginHiddenPasswd")
 #define __kWCPluginHiddenUserList       (@"kWCPluginHiddenUserList")

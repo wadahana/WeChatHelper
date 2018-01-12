@@ -15,6 +15,18 @@
 		1C5793E61FFE8E0200074669 /* WCPluginHiddenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5793E41FFE8E0200074669 /* WCPluginHiddenViewController.m */; };
 		1C6A1A8F2007C44800A51BB7 /* WCPluginContactHiddenHijack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A1A8E2007C44800A51BB7 /* WCPluginContactHiddenHijack.m */; };
 		1C6A1A932007C9FE00A51BB7 /* WCPluginUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A1A922007C9FE00A51BB7 /* WCPluginUtils.m */; };
+		1C8ED4322008FB340013ECED /* WCPluginRedEnvelopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8ED4282008FB340013ECED /* WCPluginRedEnvelopOperation.m */; };
+		1C8ED4332008FB340013ECED /* WCPluginRedEnvelopTaskManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8ED4292008FB340013ECED /* WCPluginRedEnvelopTaskManager.h */; };
+		1C8ED4342008FB340013ECED /* WCPluginRedEnvelopParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8ED42A2008FB340013ECED /* WCPluginRedEnvelopParam.m */; };
+		1C8ED4352008FB340013ECED /* WCPluginRedEnvelopTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8ED42B2008FB340013ECED /* WCPluginRedEnvelopTaskManager.m */; };
+		1C8ED4362008FB340013ECED /* WCPluginRedEnvelopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8ED42C2008FB340013ECED /* WCPluginRedEnvelopOperation.h */; };
+		1C8ED4372008FB340013ECED /* WCPluginRedEnvelopHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8ED42D2008FB340013ECED /* WCPluginRedEnvelopHelper.h */; };
+		1C8ED4382008FB340013ECED /* WCPluginRedEnvelopParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8ED42E2008FB340013ECED /* WCPluginRedEnvelopParam.h */; };
+		1C8ED4392008FB340013ECED /* WCPluginRedEnvelopParamQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8ED42F2008FB340013ECED /* WCPluginRedEnvelopParamQueue.m */; };
+		1C8ED43A2008FB340013ECED /* WCPluginRedEnvelopParamQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8ED4302008FB340013ECED /* WCPluginRedEnvelopParamQueue.h */; };
+		1C8ED43B2008FB340013ECED /* WCPluginRedEnvelopHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8ED4312008FB340013ECED /* WCPluginRedEnvelopHelper.m */; };
+		1C8ED43E200904B00013ECED /* WCPluginRedEnvelopHijack.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8ED43C200904B00013ECED /* WCPluginRedEnvelopHijack.h */; };
+		1C8ED43F200904B00013ECED /* WCPluginRedEnvelopHijack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8ED43D200904B00013ECED /* WCPluginRedEnvelopHijack.m */; };
 		1C9537741FEDFB7800B87B01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537731FEDFB7800B87B01 /* AppDelegate.m */; };
 		1C95377C1FEDFB7800B87B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C95377B1FEDFB7800B87B01 /* Assets.xcassets */; };
 		1C9537821FEDFB7800B87B01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537811FEDFB7800B87B01 /* main.m */; };
@@ -132,6 +144,18 @@
 		1C6A1A902007C46400A51BB7 /* WCPluginContactHiddenHijack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPluginContactHiddenHijack.h; sourceTree = "<group>"; };
 		1C6A1A922007C9FE00A51BB7 /* WCPluginUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPluginUtils.m; sourceTree = "<group>"; };
 		1C6A1A942007CA6D00A51BB7 /* WCPluginUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPluginUtils.h; sourceTree = "<group>"; };
+		1C8ED4282008FB340013ECED /* WCPluginRedEnvelopOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginRedEnvelopOperation.m; sourceTree = "<group>"; };
+		1C8ED4292008FB340013ECED /* WCPluginRedEnvelopTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginRedEnvelopTaskManager.h; sourceTree = "<group>"; };
+		1C8ED42A2008FB340013ECED /* WCPluginRedEnvelopParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginRedEnvelopParam.m; sourceTree = "<group>"; };
+		1C8ED42B2008FB340013ECED /* WCPluginRedEnvelopTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginRedEnvelopTaskManager.m; sourceTree = "<group>"; };
+		1C8ED42C2008FB340013ECED /* WCPluginRedEnvelopOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginRedEnvelopOperation.h; sourceTree = "<group>"; };
+		1C8ED42D2008FB340013ECED /* WCPluginRedEnvelopHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginRedEnvelopHelper.h; sourceTree = "<group>"; };
+		1C8ED42E2008FB340013ECED /* WCPluginRedEnvelopParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginRedEnvelopParam.h; sourceTree = "<group>"; };
+		1C8ED42F2008FB340013ECED /* WCPluginRedEnvelopParamQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginRedEnvelopParamQueue.m; sourceTree = "<group>"; };
+		1C8ED4302008FB340013ECED /* WCPluginRedEnvelopParamQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginRedEnvelopParamQueue.h; sourceTree = "<group>"; };
+		1C8ED4312008FB340013ECED /* WCPluginRedEnvelopHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginRedEnvelopHelper.m; sourceTree = "<group>"; };
+		1C8ED43C200904B00013ECED /* WCPluginRedEnvelopHijack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPluginRedEnvelopHijack.h; sourceTree = "<group>"; };
+		1C8ED43D200904B00013ECED /* WCPluginRedEnvelopHijack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPluginRedEnvelopHijack.m; sourceTree = "<group>"; };
 		1C95376F1FEDFB7800B87B01 /* WeChatHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9537721FEDFB7800B87B01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1C9537731FEDFB7800B87B01 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -467,6 +491,18 @@
 		1CFC961C2005DD6F00865AB9 /* RedEnvelop */ = {
 			isa = PBXGroup;
 			children = (
+				1C8ED42D2008FB340013ECED /* WCPluginRedEnvelopHelper.h */,
+				1C8ED4312008FB340013ECED /* WCPluginRedEnvelopHelper.m */,
+				1C8ED42C2008FB340013ECED /* WCPluginRedEnvelopOperation.h */,
+				1C8ED4282008FB340013ECED /* WCPluginRedEnvelopOperation.m */,
+				1C8ED42E2008FB340013ECED /* WCPluginRedEnvelopParam.h */,
+				1C8ED42A2008FB340013ECED /* WCPluginRedEnvelopParam.m */,
+				1C8ED4302008FB340013ECED /* WCPluginRedEnvelopParamQueue.h */,
+				1C8ED42F2008FB340013ECED /* WCPluginRedEnvelopParamQueue.m */,
+				1C8ED4292008FB340013ECED /* WCPluginRedEnvelopTaskManager.h */,
+				1C8ED42B2008FB340013ECED /* WCPluginRedEnvelopTaskManager.m */,
+				1C8ED43C200904B00013ECED /* WCPluginRedEnvelopHijack.h */,
+				1C8ED43D200904B00013ECED /* WCPluginRedEnvelopHijack.m */,
 			);
 			path = RedEnvelop;
 			sourceTree = "<group>";
@@ -504,19 +540,25 @@
 				1CFC96082003CA5C00865AB9 /* ContactSelectViewDelegate.h in Headers */,
 				1CFC96032003C6BB00865AB9 /* CContact.h in Headers */,
 				1C9538231FEE00CC00B87B01 /* SWCellScrollView.h in Headers */,
+				1C8ED4362008FB340013ECED /* WCPluginRedEnvelopOperation.h in Headers */,
 				1C9537CF1FEE001400B87B01 /* WCPluginUIHijack.h in Headers */,
 				1CFC96092003CA5C00865AB9 /* MMServiceCenter.h in Headers */,
+				1C8ED4372008FB340013ECED /* WCPluginRedEnvelopHelper.h in Headers */,
 				1C95381D1FEE00CC00B87B01 /* SWLongPressGestureRecognizer.h in Headers */,
 				1C9538171FEE00CC00B87B01 /* FMDatabaseAdditions.h in Headers */,
 				1CFC95FF2003C56900865AB9 /* MMUICommonUtil.h in Headers */,
+				1C8ED4382008FB340013ECED /* WCPluginRedEnvelopParam.h in Headers */,
 				1C95380C1FEE00CC00B87B01 /* MBProgressHUD.h in Headers */,
+				1C8ED43A2008FB340013ECED /* WCPluginRedEnvelopParamQueue.h in Headers */,
 				1C9537D21FEE001400B87B01 /* NSBundle+WCPlugin.h in Headers */,
 				1C9537911FEDFBEF00B87B01 /* WeChatPlugin.h in Headers */,
 				1C5793DE1FFE8BED00074669 /* WCPluginRedEnvelopViewController.h in Headers */,
 				1C9538161FEE00CC00B87B01 /* FMDB.h in Headers */,
 				1C5793E51FFE8E0200074669 /* WCPluginHiddenViewController.h in Headers */,
 				1C9537B11FEDFE3B00B87B01 /* fishhook.h in Headers */,
+				1C8ED4332008FB340013ECED /* WCPluginRedEnvelopTaskManager.h in Headers */,
 				1CFC961820052C9F00865AB9 /* WCActionSheetDelegate.h in Headers */,
+				1C8ED43E200904B00013ECED /* WCPluginRedEnvelopHijack.h in Headers */,
 				1C9537B51FEDFF0B00B87B01 /* WCPAntiDebugHelper.h in Headers */,
 				1CFC96022003C6BB00865AB9 /* CBaseContact.h in Headers */,
 				1CFC960F2005012E00865AB9 /* WCPluginDataHelper.h in Headers */,
@@ -659,15 +701,19 @@
 				1C9538251FEE00CC00B87B01 /* SWTableViewCell.m in Sources */,
 				1C9538201FEE00CC00B87B01 /* SWUtilityButtonTapGestureRecognizer.m in Sources */,
 				1C95380A1FEE00CC00B87B01 /* MBProgressHUD+WSPXMBProgressHUDUtil.m in Sources */,
+				1C8ED4342008FB340013ECED /* WCPluginRedEnvelopParam.m in Sources */,
 				1C5793DD1FFE8BED00074669 /* WCPluginRedEnvelopViewController.m in Sources */,
 				1C6A1A8F2007C44800A51BB7 /* WCPluginContactHiddenHijack.m in Sources */,
 				1C9538181FEE00CC00B87B01 /* FMDatabasePool.m in Sources */,
+				1C8ED4392008FB340013ECED /* WCPluginRedEnvelopParamQueue.m in Sources */,
 				1C9537D61FEE001400B87B01 /* NSBundle+WCPlugin.m in Sources */,
 				1C5793E21FFE8C6F00074669 /* WCPluginAccountViewController.m in Sources */,
 				1C9538141FEE00CC00B87B01 /* FMDatabase.m in Sources */,
 				1C9537E51FEE005600B87B01 /* WCPluginRightLabelTableViewCell.m in Sources */,
 				1C9538131FEE00CC00B87B01 /* FMDatabaseAdditions.m in Sources */,
+				1C8ED43F200904B00013ECED /* WCPluginRedEnvelopHijack.m in Sources */,
 				1C5793E61FFE8E0200074669 /* WCPluginHiddenViewController.m in Sources */,
+				1C8ED4352008FB340013ECED /* WCPluginRedEnvelopTaskManager.m in Sources */,
 				1C9537D71FEE001400B87B01 /* WCPluginMethodSwizzling.m in Sources */,
 				1C9537E11FEE005600B87B01 /* WCPluginRightSwitchTableViewCell.m in Sources */,
 				1C95381E1FEE00CC00B87B01 /* SWUtilityButtonView.m in Sources */,
@@ -679,9 +725,11 @@
 				1C9538191FEE00CC00B87B01 /* FMResultSet.m in Sources */,
 				1C9538091FEE00CC00B87B01 /* MBProgressHUD.m in Sources */,
 				1CFC96102005012E00865AB9 /* WCPluginDataHelper.m in Sources */,
+				1C8ED43B2008FB340013ECED /* WCPluginRedEnvelopHelper.m in Sources */,
 				1C95380E1FEE00CC00B87B01 /* MBProgressHUDManager.m in Sources */,
 				1C9537E31FEE005600B87B01 /* WCPluginAboutViewController.m in Sources */,
 				1C9538221FEE00CC00B87B01 /* NSMutableArray+SWUtilityButtons.m in Sources */,
+				1C8ED4322008FB340013ECED /* WCPluginRedEnvelopOperation.m in Sources */,
 				1C9537B01FEDFE3B00B87B01 /* fishhook.c in Sources */,
 				1C9537A11FEDFDF500B87B01 /* WeChatPlugin.m in Sources */,
 				1CFC95FC2003B91000865AB9 /* WCPluginContactSelectViewController.m in Sources */,

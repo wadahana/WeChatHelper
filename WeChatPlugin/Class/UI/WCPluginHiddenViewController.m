@@ -24,7 +24,6 @@
 
 static NSString * const kHiddenSettingCellIdendtifer = @"HiddenSettingCellIdendtifer";
 static NSString * const kHiddenSelectViewCellIdendtifer = @"HiddenSelectViewCellIdendtifer";
-#define kSelectViewHeight  (kScreenHeight-86-40-44-49)
 
 @interface WCPluginHiddenViewController ()    <UITableViewDelegate,
                                                UITableViewDataSource,
@@ -117,10 +116,7 @@ static NSString * const kHiddenSelectViewCellIdendtifer = @"HiddenSelectViewCell
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {
-        return 43;
-    }
-    return kSelectViewHeight;
+    return 43;
 }
 
 #pragma mark - UITableViewDataSource
