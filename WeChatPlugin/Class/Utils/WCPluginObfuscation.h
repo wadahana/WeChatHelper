@@ -17,6 +17,7 @@
 #define __kWCPluginHiddenEnabled        (@"kWCPluginHiddenEnabled")
 #define __kWCPluginHiddenPasswd         (@"kWCPluginHiddenPasswd")
 #define __kWCPluginHiddenUserList       (@"kWCPluginHiddenUserList")
+#define __kWCPluginFakeLocationEnabled  (@"kWCPluginFakeLocationEnabled")
 #define __kWCPluginAddFriendSex         (@"kWCPluginAddFriendSex")
 #define __kWCPluginAddFriendOpt         (@"kWCPluginAddFriendOpt")
 #define __kWCPluginAddFriendInterval    (@"kWCPluginAddFriendInterval")
