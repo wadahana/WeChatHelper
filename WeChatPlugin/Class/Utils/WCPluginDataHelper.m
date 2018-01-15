@@ -69,6 +69,7 @@ static NSString * kWCPluginRedEnvelopBlackList  = __kWCPluginRedEnvelopBlackList
 static NSString * kWCPluginHiddenEnabled        = __kWCPluginHiddenEnabled;
 static NSString * kWCPluginHiddenPasswd         = __kWCPluginHiddenPasswd;
 static NSString * kWCPluginHiddenUserList       = __kWCPluginHiddenUserList;
+static NSString * kWCPluginFakeLocationEnabled  = __kWCPluginFakeLocationEnabled;
 static NSString * kWCPluginAddFriendSex         = __kWCPluginAddFriendSex;
 static NSString * kWCPluginAddFriendOpt         = __kWCPluginAddFriendOpt;
 static NSString * kWCPluginAddFriendInterval    = __kWCPluginAddFriendInterval;
@@ -85,6 +86,8 @@ static NSArray<NSString *> * sRedEnvelopBlackList;
 static BOOL sHiddenEnabled;
 static NSString * sHiddenPasswd;
 static NSDictionary * sHiddenUserList;
+
+static BOOL sFakeLocationEnabled;
 
 static NSInteger sAddFriendSex;
 static NSInteger sAddFriendOpt;
@@ -137,6 +140,8 @@ static void __WCPluginSettingInit() {
     sHiddenEnabled = [[NSUserDefaults standardUserDefaults] boolForKey:kWCPluginHiddenEnabled];
     sHiddenPasswd = [[NSUserDefaults standardUserDefaults] objectForKey:kWCPluginHiddenPasswd];
     sHiddenUserList = [[NSUserDefaults standardUserDefaults] dictionaryForKey:kWCPluginHiddenUserList];
+    
+    sFakeLocationEnabled = [[NSUserDefaults standardUserDefaults] boolForKey:kWCPluginFakeLocationEnabled];
     
     NSInteger sex = [[NSUserDefaults standardUserDefaults] integerForKey:kWCPluginAddFriendSex];
     if (sex < 0 || sex > 2) {
@@ -303,6 +308,18 @@ BOOL WCPluginSetHiddenUserList(NSDictionary * list) {
     sHiddenUserList = list;
     [[NSUserDefaults standardUserDefaults] setObject:list forKey:kWCPluginHiddenUserList];
     return [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+#pragma mark - 虚拟定位开关
+
+BOOL WCPluginGetFakeLocationEnabled() {
+    return sFakeLocationEnabled;
+}
+
+void WCPluginSetFakeLocationEnabled(BOOL enabled) {
+    sFakeLocationEnabled = enabled;
+    [[NSUserDefaults standardUserDefaults] setBool:enabled forKey:kWCPluginFakeLocationEnabled];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 #pragma mark - 暴力加人性别类型
