@@ -16,4 +16,11 @@
 #import <MMServiceCenter.h>
 #import <ContactSelectView.h>
 
+#import "MMTableView.h"
+#import "MMTableViewCell.h"
+
+#import "MMTableViewInfo.h"
+#import "MMTableViewCellInfo.h"
+#import "MMTableViewSectionInfo.h"
+
 #endif /* WeChatHeader_h */
