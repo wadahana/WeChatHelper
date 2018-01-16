@@ -12,6 +12,7 @@
 #import "WCPluginAccountViewController.h"
 #import "WCPluginHiddenViewController.h"
 #import "WCPluginContactSelectViewController.h"
+#import "WCPluginLocationViewController.h"
 #import "WCPluginUtils.h"
 #import "WCPluginDataHelper.h"
 
@@ -23,8 +24,10 @@ static NSString * kTableViewCellIdentifier = @"WCPluginSettingTableViewCellIdent
 @property (nonatomic, strong) UITableViewCell * aboutCell;
 @property (nonatomic, strong) UITableViewCell * redEnvelopCell;
 @property (nonatomic, strong) UITableViewCell * contactHiddenCell;
+@property (nonatomic, strong) UITableViewCell * locationCell;
 @property (nonatomic, strong) NSMutableArray * cellArray;
 @property (nonatomic, strong) NSMutableArray * controllerArray;
+
 @end
 
 @implementation WCPluginSettingViewController
@@ -67,6 +70,11 @@ static NSString * kTableViewCellIdentifier = @"WCPluginSettingTableViewCellIdent
     self.contactHiddenCell.imageView.image = [UIImage imageNamed:@"MoreMyFavorites.png"];
     self.contactHiddenCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
+    self.locationCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"settingCellIdentifier"];
+    self.locationCell.textLabel.text = @"虚拟定位";
+    self.locationCell.imageView.image = [UIImage imageNamed:@"MoreMyFavorites.png"];
+    self.locationCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
     self.aboutCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"settingCellIdentifier"];
     self.aboutCell.textLabel.text = @"关于";
     self.aboutCell.imageView.image = [UIImage imageNamed:@"MoreMyFavorites.png"];
@@ -86,6 +94,8 @@ static NSString * kTableViewCellIdentifier = @"WCPluginSettingTableViewCellIdent
         [self.cellArray addObject:self.contactHiddenCell];
         [self.controllerArray addObject:[WCPluginHiddenViewController class]];
     }
+    [self.cellArray addObject:self.locationCell];
+    [self.controllerArray addObject:[WCPluginLocationViewController class]];
     [self.cellArray addObject:self.aboutCell];
     [self.controllerArray addObject:[WCPluginAboutViewController class]];
     [self.tableView reloadData];

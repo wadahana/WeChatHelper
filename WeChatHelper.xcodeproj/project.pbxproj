@@ -15,6 +15,18 @@
 		1C5793E61FFE8E0200074669 /* WCPluginHiddenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5793E41FFE8E0200074669 /* WCPluginHiddenViewController.m */; };
 		1C6A1A8F2007C44800A51BB7 /* WCPluginContactHiddenHijack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A1A8E2007C44800A51BB7 /* WCPluginContactHiddenHijack.m */; };
 		1C6A1A932007C9FE00A51BB7 /* WCPluginUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A1A922007C9FE00A51BB7 /* WCPluginUtils.m */; };
+		1C7CF4C1200D0A4C00691E0F /* MMTableViewInfoDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7CF4BA200D0A4C00691E0F /* MMTableViewInfoDelegate.h */; };
+		1C7CF4C2200D0A4C00691E0F /* MMTableViewUserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7CF4BB200D0A4C00691E0F /* MMTableViewUserInfo.h */; };
+		1C7CF4C3200D0A4C00691E0F /* MMTableViewCellInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7CF4BC200D0A4C00691E0F /* MMTableViewCellInfo.h */; };
+		1C7CF4C4200D0A4C00691E0F /* MMTableViewInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7CF4BD200D0A4C00691E0F /* MMTableViewInfo.h */; };
+		1C7CF4C5200D0A4C00691E0F /* MMTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7CF4BE200D0A4C00691E0F /* MMTableViewCell.h */; };
+		1C7CF4C6200D0A4C00691E0F /* MMTableViewSectionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7CF4BF200D0A4C00691E0F /* MMTableViewSectionInfo.h */; };
+		1C7CF4C7200D0A4C00691E0F /* MMTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7CF4C0200D0A4C00691E0F /* MMTableView.h */; };
+		1C7CF4CA200D0A8000691E0F /* MMTableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7CF4C8200D0A8000691E0F /* MMTableViewDelegate.h */; };
+		1C7CF4CB200D0A8000691E0F /* MMDelegateCenterExt.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7CF4C9200D0A8000691E0F /* MMDelegateCenterExt.h */; };
+		1C7CF4CE200D0D0E00691E0F /* WCPluginMapViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7CF4CC200D0D0E00691E0F /* WCPluginMapViewController.h */; };
+		1C7CF4CF200D0D0E00691E0F /* WCPluginMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7CF4CD200D0D0E00691E0F /* WCPluginMapViewController.m */; };
+		1C7CF4D1200D0D7700691E0F /* MMObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7CF4D0200D0D7600691E0F /* MMObject.h */; };
 		1C8ED4322008FB340013ECED /* WCPluginRedEnvelopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8ED4282008FB340013ECED /* WCPluginRedEnvelopOperation.m */; };
 		1C8ED4332008FB340013ECED /* WCPluginRedEnvelopTaskManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8ED4292008FB340013ECED /* WCPluginRedEnvelopTaskManager.h */; };
 		1C8ED4342008FB340013ECED /* WCPluginRedEnvelopParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8ED42A2008FB340013ECED /* WCPluginRedEnvelopParam.m */; };
@@ -28,6 +40,8 @@
 		1C8ED43E200904B00013ECED /* WCPluginRedEnvelopHijack.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8ED43C200904B00013ECED /* WCPluginRedEnvelopHijack.h */; };
 		1C8ED43F200904B00013ECED /* WCPluginRedEnvelopHijack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8ED43D200904B00013ECED /* WCPluginRedEnvelopHijack.m */; };
 		1C8ED441200910E80013ECED /* MMTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8ED440200910E80013ECED /* MMTabBarController.h */; };
+		1C8ED4482009C57D0013ECED /* WCPluginLocationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8ED4462009C57D0013ECED /* WCPluginLocationViewController.h */; };
+		1C8ED4492009C57D0013ECED /* WCPluginLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8ED4472009C57D0013ECED /* WCPluginLocationViewController.m */; };
 		1C9537741FEDFB7800B87B01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537731FEDFB7800B87B01 /* AppDelegate.m */; };
 		1C95377C1FEDFB7800B87B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C95377B1FEDFB7800B87B01 /* Assets.xcassets */; };
 		1C9537821FEDFB7800B87B01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9537811FEDFB7800B87B01 /* main.m */; };
@@ -145,6 +159,18 @@
 		1C6A1A902007C46400A51BB7 /* WCPluginContactHiddenHijack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPluginContactHiddenHijack.h; sourceTree = "<group>"; };
 		1C6A1A922007C9FE00A51BB7 /* WCPluginUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPluginUtils.m; sourceTree = "<group>"; };
 		1C6A1A942007CA6D00A51BB7 /* WCPluginUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPluginUtils.h; sourceTree = "<group>"; };
+		1C7CF4BA200D0A4C00691E0F /* MMTableViewInfoDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableViewInfoDelegate.h; sourceTree = "<group>"; };
+		1C7CF4BB200D0A4C00691E0F /* MMTableViewUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableViewUserInfo.h; sourceTree = "<group>"; };
+		1C7CF4BC200D0A4C00691E0F /* MMTableViewCellInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableViewCellInfo.h; sourceTree = "<group>"; };
+		1C7CF4BD200D0A4C00691E0F /* MMTableViewInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableViewInfo.h; sourceTree = "<group>"; };
+		1C7CF4BE200D0A4C00691E0F /* MMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableViewCell.h; sourceTree = "<group>"; };
+		1C7CF4BF200D0A4C00691E0F /* MMTableViewSectionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableViewSectionInfo.h; sourceTree = "<group>"; };
+		1C7CF4C0200D0A4C00691E0F /* MMTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableView.h; sourceTree = "<group>"; };
+		1C7CF4C8200D0A8000691E0F /* MMTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableViewDelegate.h; sourceTree = "<group>"; };
+		1C7CF4C9200D0A8000691E0F /* MMDelegateCenterExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDelegateCenterExt.h; sourceTree = "<group>"; };
+		1C7CF4CC200D0D0E00691E0F /* WCPluginMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPluginMapViewController.h; sourceTree = "<group>"; };
+		1C7CF4CD200D0D0E00691E0F /* WCPluginMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPluginMapViewController.m; sourceTree = "<group>"; };
+		1C7CF4D0200D0D7600691E0F /* MMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMObject.h; sourceTree = "<group>"; };
 		1C8ED4282008FB340013ECED /* WCPluginRedEnvelopOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginRedEnvelopOperation.m; sourceTree = "<group>"; };
 		1C8ED4292008FB340013ECED /* WCPluginRedEnvelopTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginRedEnvelopTaskManager.h; sourceTree = "<group>"; };
 		1C8ED42A2008FB340013ECED /* WCPluginRedEnvelopParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginRedEnvelopParam.m; sourceTree = "<group>"; };
@@ -158,6 +184,8 @@
 		1C8ED43C200904B00013ECED /* WCPluginRedEnvelopHijack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPluginRedEnvelopHijack.h; sourceTree = "<group>"; };
 		1C8ED43D200904B00013ECED /* WCPluginRedEnvelopHijack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPluginRedEnvelopHijack.m; sourceTree = "<group>"; };
 		1C8ED440200910E80013ECED /* MMTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTabBarController.h; sourceTree = "<group>"; };
+		1C8ED4462009C57D0013ECED /* WCPluginLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPluginLocationViewController.h; sourceTree = "<group>"; };
+		1C8ED4472009C57D0013ECED /* WCPluginLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPluginLocationViewController.m; sourceTree = "<group>"; };
 		1C95376F1FEDFB7800B87B01 /* WeChatHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9537721FEDFB7800B87B01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1C9537731FEDFB7800B87B01 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -372,11 +400,15 @@
 			isa = PBXGroup;
 			children = (
 				1C5793DF1FFE8C6F00074669 /* WCPluginAccountViewController.h */,
+				1C7CF4CC200D0D0E00691E0F /* WCPluginMapViewController.h */,
+				1C7CF4CD200D0D0E00691E0F /* WCPluginMapViewController.m */,
 				1C5793E01FFE8C6F00074669 /* WCPluginAccountViewController.m */,
 				1C5793DC1FFE8BED00074669 /* WCPluginRedEnvelopViewController.h */,
 				1C5793DB1FFE8BED00074669 /* WCPluginRedEnvelopViewController.m */,
 				1C5793E31FFE8E0200074669 /* WCPluginHiddenViewController.h */,
 				1C5793E41FFE8E0200074669 /* WCPluginHiddenViewController.m */,
+				1C8ED4462009C57D0013ECED /* WCPluginLocationViewController.h */,
+				1C8ED4472009C57D0013ECED /* WCPluginLocationViewController.m */,
 				1CFC95F92003B91000865AB9 /* WCPluginContactSelectViewController.h */,
 				1CFC95FA2003B91000865AB9 /* WCPluginContactSelectViewController.m */,
 				1C9537DA1FEE005500B87B01 /* WCPluginAboutViewController.h */,
@@ -466,6 +498,16 @@
 			isa = PBXGroup;
 			children = (
 				1CFC960B2003CC2800865AB9 /* CDStructures.h */,
+				1C7CF4D0200D0D7600691E0F /* MMObject.h */,
+				1C7CF4C9200D0A8000691E0F /* MMDelegateCenterExt.h */,
+				1C7CF4C8200D0A8000691E0F /* MMTableViewDelegate.h */,
+				1C7CF4C0200D0A4C00691E0F /* MMTableView.h */,
+				1C7CF4BE200D0A4C00691E0F /* MMTableViewCell.h */,
+				1C7CF4BC200D0A4C00691E0F /* MMTableViewCellInfo.h */,
+				1C7CF4BD200D0A4C00691E0F /* MMTableViewInfo.h */,
+				1C7CF4BA200D0A4C00691E0F /* MMTableViewInfoDelegate.h */,
+				1C7CF4BF200D0A4C00691E0F /* MMTableViewSectionInfo.h */,
+				1C7CF4BB200D0A4C00691E0F /* MMTableViewUserInfo.h */,
 				1C8ED440200910E80013ECED /* MMTabBarController.h */,
 				1CFC961520052C6E00865AB9 /* MMSearchBarDelegate.h */,
 				1CFC96062003CA5C00865AB9 /* MMServiceCenter.h */,
@@ -525,15 +567,19 @@
 				1C5793E11FFE8C6F00074669 /* WCPluginAccountViewController.h in Headers */,
 				1CFC95FB2003B91000865AB9 /* WCPluginContactSelectViewController.h in Headers */,
 				1C95380F1FEE00CC00B87B01 /* FMDatabase.h in Headers */,
+				1C7CF4C7200D0A4C00691E0F /* MMTableView.h in Headers */,
 				1C9538241FEE00CC00B87B01 /* SWUtilityButtonView.h in Headers */,
+				1C7CF4C1200D0A4C00691E0F /* MMTableViewInfoDelegate.h in Headers */,
 				1C95380B1FEE00CC00B87B01 /* MBProgressHUDManager.h in Headers */,
 				1C9538111FEE00CC00B87B01 /* FMResultSet.h in Headers */,
 				1C95381C1FEE00CC00B87B01 /* NSMutableArray+SWUtilityButtons.h in Headers */,
 				1C9537E61FEE005600B87B01 /* WCPluginSettingViewController.h in Headers */,
 				1C95381F1FEE00CC00B87B01 /* SWTableViewCell.h in Headers */,
 				1C9537D51FEE001400B87B01 /* WCPluginDefine.h in Headers */,
+				1C7CF4D1200D0D7700691E0F /* MMObject.h in Headers */,
 				1C9537D01FEE001400B87B01 /* UIView+WCPlugin.h in Headers */,
 				1CFC960C2003CC2800865AB9 /* CDStructures.h in Headers */,
+				1C8ED4482009C57D0013ECED /* WCPluginLocationViewController.h in Headers */,
 				1C9537E71FEE005600B87B01 /* WCPluginRightSwitchTableViewCell.h in Headers */,
 				1CFC961A20052CC400865AB9 /* ContactsDataLogicDelegate.h in Headers */,
 				1C9537A01FEDFDF500B87B01 /* WCPluginPrefix.pch in Headers */,
@@ -544,6 +590,7 @@
 				1CFC96032003C6BB00865AB9 /* CContact.h in Headers */,
 				1C9538231FEE00CC00B87B01 /* SWCellScrollView.h in Headers */,
 				1C8ED4362008FB340013ECED /* WCPluginRedEnvelopOperation.h in Headers */,
+				1C7CF4C4200D0A4C00691E0F /* MMTableViewInfo.h in Headers */,
 				1C9537CF1FEE001400B87B01 /* WCPluginUIHijack.h in Headers */,
 				1CFC96092003CA5C00865AB9 /* MMServiceCenter.h in Headers */,
 				1C8ED4372008FB340013ECED /* WCPluginRedEnvelopHelper.h in Headers */,
@@ -552,13 +599,20 @@
 				1C8ED441200910E80013ECED /* MMTabBarController.h in Headers */,
 				1CFC95FF2003C56900865AB9 /* MMUICommonUtil.h in Headers */,
 				1C8ED4382008FB340013ECED /* WCPluginRedEnvelopParam.h in Headers */,
+				1C7CF4C5200D0A4C00691E0F /* MMTableViewCell.h in Headers */,
+				1C7CF4CB200D0A8000691E0F /* MMDelegateCenterExt.h in Headers */,
 				1C95380C1FEE00CC00B87B01 /* MBProgressHUD.h in Headers */,
+				1C7CF4CA200D0A8000691E0F /* MMTableViewDelegate.h in Headers */,
+				1C7CF4C6200D0A4C00691E0F /* MMTableViewSectionInfo.h in Headers */,
 				1C8ED43A2008FB340013ECED /* WCPluginRedEnvelopParamQueue.h in Headers */,
 				1C9537D21FEE001400B87B01 /* NSBundle+WCPlugin.h in Headers */,
 				1C9537911FEDFBEF00B87B01 /* WeChatPlugin.h in Headers */,
+				1C7CF4CE200D0D0E00691E0F /* WCPluginMapViewController.h in Headers */,
 				1C5793DE1FFE8BED00074669 /* WCPluginRedEnvelopViewController.h in Headers */,
 				1C9538161FEE00CC00B87B01 /* FMDB.h in Headers */,
 				1C5793E51FFE8E0200074669 /* WCPluginHiddenViewController.h in Headers */,
+				1C7CF4C3200D0A4C00691E0F /* MMTableViewCellInfo.h in Headers */,
+				1C7CF4C2200D0A4C00691E0F /* MMTableViewUserInfo.h in Headers */,
 				1C9537B11FEDFE3B00B87B01 /* fishhook.h in Headers */,
 				1C8ED4332008FB340013ECED /* WCPluginRedEnvelopTaskManager.h in Headers */,
 				1CFC961820052C9F00865AB9 /* WCActionSheetDelegate.h in Headers */,
@@ -713,6 +767,7 @@
 				1C9537D61FEE001400B87B01 /* NSBundle+WCPlugin.m in Sources */,
 				1C5793E21FFE8C6F00074669 /* WCPluginAccountViewController.m in Sources */,
 				1C9538141FEE00CC00B87B01 /* FMDatabase.m in Sources */,
+				1C7CF4CF200D0D0E00691E0F /* WCPluginMapViewController.m in Sources */,
 				1C9537E51FEE005600B87B01 /* WCPluginRightLabelTableViewCell.m in Sources */,
 				1C9538131FEE00CC00B87B01 /* FMDatabaseAdditions.m in Sources */,
 				1C8ED43F200904B00013ECED /* WCPluginRedEnvelopHijack.m in Sources */,
@@ -723,6 +778,7 @@
 				1C95381E1FEE00CC00B87B01 /* SWUtilityButtonView.m in Sources */,
 				1C9537D11FEE001400B87B01 /* WCPluginUIHijack.m in Sources */,
 				1C9537CE1FEE001400B87B01 /* UIView+WCPlugin.m in Sources */,
+				1C8ED4492009C57D0013ECED /* WCPluginLocationViewController.m in Sources */,
 				1C95381B1FEE00CC00B87B01 /* SWCellScrollView.m in Sources */,
 				1C9538101FEE00CC00B87B01 /* FMDatabaseQueue.m in Sources */,
 				1C9537E81FEE005600B87B01 /* WCPluginSettingViewController.m in Sources */,
