@@ -27,3 +27,7 @@
 ## 版权及免责声明
 本软件仅供学习和研究使用，请勿用于商业或非法用途，如有此引起的法律法规责任，由使用者自行承担。
 
+## 联系作者
+<div align=center>
+<img src="images/WeChat.png" width=50% alt="微信号:wadahana" />
+</div>
