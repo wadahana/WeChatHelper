@@ -155,7 +155,7 @@ static WCPluginRedEnvelopHelper * sInstance = nil;
         NSError * err = nil;
         id obj = [response performSelector:@selector(retText)];
         NSData * buffer = [obj performSelector:@selector(buffer)];
-        NSString * respString = [[NSString alloc] initWithData:buffer encoding:NSUTF8StringEncoding];
+        //NSString * respString = [[NSString alloc] initWithData:buffer encoding:NSUTF8StringEncoding];
         NSDictionary * respDict = [NSJSONSerialization JSONObjectWithData:buffer options:NSJSONReadingMutableContainers error:&err];
         return respDict;
     };

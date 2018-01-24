@@ -36,7 +36,8 @@
     [super layoutSubviews];
     CGRect frame = self.contentView.frame;
     UIFont * font = [self.rightLabel font];
-    CGSize size = [self.rightLabel.text sizeWithFont:font];
+    //CGSize size = [self.rightLabel.text sizeWithFont:font];
+    CGSize size = [self.rightLabel.text sizeWithAttributes: @{@"NSFontAttributeName" : font}];
     self.rightLabel.frame = CGRectMake(frame.size.width - size.width - 5, (frame.size.height - size.height)/2, size.width, size.height);
 }
 
