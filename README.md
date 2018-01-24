@@ -29,5 +29,5 @@
 
 ## 联系作者
 <div align=center>
-<img src="https://raw.githubusercontent.com/wadahana/WeChatHelper/master/Images/WeChat.png" width=50% alt="微信号:wadahana" />
+<img src="https://raw.githubusercontent.com/wadahana/WeChatHelper/master/Images/WeChat.png" width=30% alt="微信号:wadahana3" />
 </div>
