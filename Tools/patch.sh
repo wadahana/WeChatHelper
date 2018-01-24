@@ -94,8 +94,6 @@ done
 chmod +x "$TARGET_APP_PATH/$APP_BINARY"
 
 
-echo "----> 1"
-
 # ---------------------------------------------------
 # 4. Inject External Frameworks if Exists
 
@@ -123,18 +121,12 @@ for file in `ls -1 "${FRAMEWORKS_TO_INJECT_PATH}"`; do
     "$OPTOOL" install -c load -p "@executable_path/Dylibs/$filename" -t "$TARGET_APP_PATH/$APP_BINARY"
 done
 
-
-echo "----> 2"
-
-
 # ---------------------------------------------------
 # 5. Remove Plugins/Watch (AppExtensions), To Simplify the Signing Process
 
 rm -rf "$TARGET_APP_PATH/PlugIns" || true
 rm -rf "$TARGET_APP_PATH/Watch" || true
 
-
-echo "----> 3"
 # ---------------------------------------------------
 # 6. Copy Images to Target App
 for IMAGE in "$IMAGES_TO_COPY_PATH/"*
@@ -143,8 +135,6 @@ do
     cp "${IMAGE}" "${TARGET_APP_PATH}/${FILENAME}"
 done
 
-
-echo "----> 4"
 # ---------------------------------------------------
 # 7. Update Info.plist for Target App
 
@@ -155,8 +145,6 @@ TARGET_DISPLAY_NAME="$DUMMY_DISPLAY_NAME$TARGET_DISPLAY_NAME"
 /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName $TARGET_DISPLAY_NAME" "$TARGET_APP_PATH/Info.plist"
 
 
-
-echo "----> 5"
 # ---------------------------------------------------
 # 8. Code Sign All The Things
 
@@ -166,8 +154,6 @@ do
     /usr/bin/codesign --force --sign "$EXPANDED_CODE_SIGN_IDENTITY" "$DYLIB"
 done
 
-
-echo "----> 6"
 if [ -d "$TARGET_APP_FRAMEWORKS_PATH" ]; then
     for FRAMEWORK in "$TARGET_APP_FRAMEWORKS_PATH/"*
     do
@@ -175,8 +161,6 @@ if [ -d "$TARGET_APP_FRAMEWORKS_PATH" ]; then
         /usr/bin/codesign --force --sign "$EXPANDED_CODE_SIGN_IDENTITY" "$FRAMEWORK"
     done
 fi
-
-echo "----> 7"
 
 /usr/bin/codesign --force --sign "$EXPANDED_CODE_SIGN_IDENTITY" --timestamp=none "$TARGET_APP_PATH/$APP_BINARY"
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C09180B2018B9360082723F /* optool in Resources */ = {isa = PBXBuildFile; fileRef = 1C0918092018B9360082723F /* optool */; };
+		1C09180C2018B9360082723F /* patch.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1C09180A2018B9360082723F /* patch.sh */; };
 		1C5793DD1FFE8BED00074669 /* WCPluginRedEnvelopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5793DB1FFE8BED00074669 /* WCPluginRedEnvelopViewController.m */; };
 		1C5793DE1FFE8BED00074669 /* WCPluginRedEnvelopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5793DC1FFE8BED00074669 /* WCPluginRedEnvelopViewController.h */; };
 		1C5793E11FFE8C6F00074669 /* WCPluginAccountViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5793DF1FFE8C6F00074669 /* WCPluginAccountViewController.h */; };
@@ -48,7 +50,6 @@
 		1C9537911FEDFBEF00B87B01 /* WeChatPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C95378F1FEDFBEF00B87B01 /* WeChatPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C9537941FEDFBEF00B87B01 /* WeChatPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C95378D1FEDFBEF00B87B01 /* WeChatPlugin.framework */; };
 		1C9537951FEDFBEF00B87B01 /* WeChatPlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C95378D1FEDFBEF00B87B01 /* WeChatPlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1C95379B1FEDFCEA00B87B01 /* Tools in Resources */ = {isa = PBXBuildFile; fileRef = 1C95379A1FEDFCEA00B87B01 /* Tools */; };
 		1C9537A01FEDFDF500B87B01 /* WCPluginPrefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1C95379E1FEDFDF500B87B01 /* WCPluginPrefix.pch */; };
 		1C9537A11FEDFDF500B87B01 /* WeChatPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C95379F1FEDFDF500B87B01 /* WeChatPlugin.m */; };
 		1C9537AF1FEDFE3B00B87B01 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1C9537AA1FEDFE3B00B87B01 /* LICENSE */; };
@@ -154,6 +155,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C0918092018B9360082723F /* optool */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = optool; sourceTree = "<group>"; };
+		1C09180A2018B9360082723F /* patch.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = patch.sh; sourceTree = "<group>"; };
 		1C5793DB1FFE8BED00074669 /* WCPluginRedEnvelopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginRedEnvelopViewController.m; sourceTree = "<group>"; };
 		1C5793DC1FFE8BED00074669 /* WCPluginRedEnvelopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginRedEnvelopViewController.h; sourceTree = "<group>"; };
 		1C5793DF1FFE8C6F00074669 /* WCPluginAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginAccountViewController.h; sourceTree = "<group>"; };
@@ -200,7 +203,6 @@
 		1C95378D1FEDFBEF00B87B01 /* WeChatPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeChatPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C95378F1FEDFBEF00B87B01 /* WeChatPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeChatPlugin.h; sourceTree = "<group>"; };
 		1C9537901FEDFBEF00B87B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1C95379A1FEDFCEA00B87B01 /* Tools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tools; sourceTree = SOURCE_ROOT; };
 		1C95379E1FEDFDF500B87B01 /* WCPluginPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginPrefix.pch; sourceTree = "<group>"; };
 		1C95379F1FEDFDF500B87B01 /* WeChatPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatPlugin.m; sourceTree = "<group>"; };
 		1C9537AA1FEDFE3B00B87B01 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -307,6 +309,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C0918082018B9360082723F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				1C0918092018B9360082723F /* optool */,
+				1C09180A2018B9360082723F /* patch.sh */,
+			);
+			path = Tools;
+			sourceTree = SOURCE_ROOT;
+		};
 		1C9537661FEDFB7700B87B01 = {
 			isa = PBXGroup;
 			children = (
@@ -329,7 +340,7 @@
 		1C9537711FEDFB7800B87B01 /* WeChatHelper */ = {
 			isa = PBXGroup;
 			children = (
-				1C95379A1FEDFCEA00B87B01 /* Tools */,
+				1C0918082018B9360082723F /* Tools */,
 				1C9537721FEDFB7800B87B01 /* AppDelegate.h */,
 				1C9537731FEDFB7800B87B01 /* AppDelegate.m */,
 				1C95377B1FEDFB7800B87B01 /* Assets.xcassets */,
@@ -737,8 +748,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C95379B1FEDFCEA00B87B01 /* Tools in Resources */,
 				1C95377C1FEDFB7800B87B01 /* Assets.xcassets in Resources */,
+				1C09180C2018B9360082723F /* patch.sh in Resources */,
+				1C09180B2018B9360082723F /* optool in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
