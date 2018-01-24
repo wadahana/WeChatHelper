@@ -31,7 +31,10 @@
                 newLocation = loc;
             }
         }
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
         [self.delegate locationManager:manager didUpdateToLocation:newLocation fromLocation:oldLocation];
+#pragma clang diagnostic pop
     }
 }
 
@@ -63,21 +66,26 @@
         if (locations.count > 0) {
             newLocation = locations[0];
         }
-        CLLocation * loc = newLocation;
         if (WCPluginGetFakeLocEnabled()) {
             CLLocationCoordinate2D loc2D = WCPluginGetFakeLocCurrentLoc();
             if (CLLocationCoordinate2DIsValid(loc2D)) {
-                loc = [[CLLocation alloc] initWithCoordinate:loc2D
+                CLLocation * fakeLocation = [[CLLocation alloc] initWithCoordinate:loc2D
                                                     altitude:newLocation.altitude
                                           horizontalAccuracy:newLocation.horizontalAccuracy
                                             verticalAccuracy:newLocation.verticalAccuracy
                                                       course:newLocation.course
                                                        speed:newLocation.speed
                                                    timestamp:newLocation.timestamp];
-                newLocation = loc;
+                newLocation = fakeLocation;
             }
         }
-        [self.delegate locationManager:manager didUpdateToLocation:newLocation fromLocation:nil];
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        CLLocation * fromLocation = nil;
+        [self.delegate locationManager:manager didUpdateToLocation:newLocation fromLocation:fromLocation];
+#pragma clang diagnostic pop
+
     }
     return;
 }
