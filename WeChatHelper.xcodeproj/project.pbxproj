@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1C09180B2018B9360082723F /* optool in Resources */ = {isa = PBXBuildFile; fileRef = 1C0918092018B9360082723F /* optool */; };
 		1C09180C2018B9360082723F /* patch.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1C09180A2018B9360082723F /* patch.sh */; };
+		1C09180F2018CFDD0082723F /* WGS84TOGCJ02.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C09180D2018CFDD0082723F /* WGS84TOGCJ02.m */; };
+		1C0918102018CFDD0082723F /* WGS84TOGCJ02.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C09180E2018CFDD0082723F /* WGS84TOGCJ02.h */; };
 		1C5793DD1FFE8BED00074669 /* WCPluginRedEnvelopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5793DB1FFE8BED00074669 /* WCPluginRedEnvelopViewController.m */; };
 		1C5793DE1FFE8BED00074669 /* WCPluginRedEnvelopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5793DC1FFE8BED00074669 /* WCPluginRedEnvelopViewController.h */; };
 		1C5793E11FFE8C6F00074669 /* WCPluginAccountViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5793DF1FFE8C6F00074669 /* WCPluginAccountViewController.h */; };
@@ -157,6 +159,8 @@
 /* Begin PBXFileReference section */
 		1C0918092018B9360082723F /* optool */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = optool; sourceTree = "<group>"; };
 		1C09180A2018B9360082723F /* patch.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = patch.sh; sourceTree = "<group>"; };
+		1C09180D2018CFDD0082723F /* WGS84TOGCJ02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGS84TOGCJ02.m; sourceTree = "<group>"; };
+		1C09180E2018CFDD0082723F /* WGS84TOGCJ02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGS84TOGCJ02.h; sourceTree = "<group>"; };
 		1C5793DB1FFE8BED00074669 /* WCPluginRedEnvelopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPluginRedEnvelopViewController.m; sourceTree = "<group>"; };
 		1C5793DC1FFE8BED00074669 /* WCPluginRedEnvelopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginRedEnvelopViewController.h; sourceTree = "<group>"; };
 		1C5793DF1FFE8C6F00074669 /* WCPluginAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPluginAccountViewController.h; sourceTree = "<group>"; };
@@ -453,6 +457,8 @@
 		1C9537C61FEE001400B87B01 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1C09180E2018CFDD0082723F /* WGS84TOGCJ02.h */,
+				1C09180D2018CFDD0082723F /* WGS84TOGCJ02.m */,
 				1CFC96112005028B00865AB9 /* WCPluginObfuscation.h */,
 				1C9537CA1FEE001400B87B01 /* WCPluginDefine.h */,
 				1C6A1A942007CA6D00A51BB7 /* WCPluginUtils.h */,
@@ -522,10 +528,10 @@
 			children = (
 				1CA1F85D201832AB00FD1B9F /* WCPluginFakeLocHijack.m */,
 				1CA1F85F201832CB00FD1B9F /* WCPluginFakeLocHijack.h */,
-				1CA1F8602018334200FD1B9F /* CLLocationManager+WCPlugin.h */,
-				1CA1F8612018334200FD1B9F /* CLLocationManager+WCPlugin.m */,
 				1CA1F8642018517B00FD1B9F /* WCPluginLocationManager.h */,
 				1CA1F8652018517B00FD1B9F /* WCPluginLocationManager.m */,
+				1CA1F8602018334200FD1B9F /* CLLocationManager+WCPlugin.h */,
+				1CA1F8612018334200FD1B9F /* CLLocationManager+WCPlugin.m */,
 			);
 			path = FakeLoc;
 			sourceTree = "<group>";
@@ -612,6 +618,7 @@
 				1C9537E61FEE005600B87B01 /* WCPluginSettingViewController.h in Headers */,
 				1C95381F1FEE00CC00B87B01 /* SWTableViewCell.h in Headers */,
 				1C9537D51FEE001400B87B01 /* WCPluginDefine.h in Headers */,
+				1C0918102018CFDD0082723F /* WGS84TOGCJ02.h in Headers */,
 				1C7CF4D1200D0D7700691E0F /* MMObject.h in Headers */,
 				1C9537D01FEE001400B87B01 /* UIView+WCPlugin.h in Headers */,
 				1CFC960C2003CC2800865AB9 /* CDStructures.h in Headers */,
@@ -833,6 +840,7 @@
 				1C8ED4322008FB340013ECED /* WCPluginRedEnvelopOperation.m in Sources */,
 				1C9537B01FEDFE3B00B87B01 /* fishhook.c in Sources */,
 				1C9537A11FEDFDF500B87B01 /* WeChatPlugin.m in Sources */,
+				1C09180F2018CFDD0082723F /* WGS84TOGCJ02.m in Sources */,
 				1CFC95FC2003B91000865AB9 /* WCPluginContactSelectViewController.m in Sources */,
 				1C9538211FEE00CC00B87B01 /* SWLongPressGestureRecognizer.m in Sources */,
 				1C6A1A932007C9FE00A51BB7 /* WCPluginUtils.m in Sources */,
