@@ -62,12 +62,13 @@ BOOL WCPluginSetHiddenUserList(NSDictionary * list);
 
 #pragma mark - 虚拟定位开关
 
-BOOL WCPluginGetFakeLocationEnabled();
-void WCPluginSetFakeLocationEnabled(BOOL enabled);
+BOOL WCPluginGetFakeLocEnabled();
+void WCPluginSetFakeLocEnabled(BOOL enabled);
 
 #pragma mark - 虚拟定位位置
-//CLLocationCoordinate2D WCPluginGetFakeLocationCurrentCoordinate();
-//void WCPluginGet
+
+CLLocationCoordinate2D WCPluginGetFakeLocCurrentLoc();
+void WCPluginSetFakeLocCurrentLoc(CLLocationCoordinate2D loc);
 
 #pragma mark - 暴力加人性别类型
 

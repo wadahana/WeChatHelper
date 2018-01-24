@@ -47,7 +47,7 @@ static NSString * kLocationCellIdendtifer = @"kLocationCellIdendtifer";
     MMTableViewSectionInfo * sectionInfo = [NSClassFromString(@"MMTableViewSectionInfo") sectionInfoDefaut];
     
     Class clazz = NSClassFromString(@"MMTableViewCellInfo");
-    MMTableViewCellInfo * cell1 = [clazz switchCellForSel:@selector(onSwitchFakeLocation:) target:self title:@"虚拟定位开关" on:WCPluginGetFakeLocationEnabled()];
+    MMTableViewCellInfo * cell1 = [clazz switchCellForSel:@selector(onSwitchFakeLocation:) target:self title:@"虚拟定位开关" on:WCPluginGetFakeLocEnabled()];
     MMTableViewCellInfo * cell2 = [clazz normalCellForSel:@selector(onMapkitController) target:self title:@"地图" accessoryType:1];
     
     [sectionInfo addCell:cell1];
@@ -57,7 +57,7 @@ static NSString * kLocationCellIdendtifer = @"kLocationCellIdendtifer";
 }
 
 - (void) onSwitchFakeLocation : (UISwitch *)sender {
-    WCPluginSetFakeLocationEnabled(sender.on);
+    WCPluginSetFakeLocEnabled(sender.on);
 }
 
 - (void) onMapkitController {

@@ -69,7 +69,8 @@ static NSString * kWCPluginRedEnvelopBlackList  = __kWCPluginRedEnvelopBlackList
 static NSString * kWCPluginHiddenEnabled        = __kWCPluginHiddenEnabled;
 static NSString * kWCPluginHiddenPasswd         = __kWCPluginHiddenPasswd;
 static NSString * kWCPluginHiddenUserList       = __kWCPluginHiddenUserList;
-static NSString * kWCPluginFakeLocationEnabled  = __kWCPluginFakeLocationEnabled;
+static NSString * kWCPluginFakeLocEnabled       = __kWCPluginFakeLocEnabled;
+static NSString * kWCPluginFakeLocCurrentLoc    = __kWCPluginFakeLocCurrentLoc;
 static NSString * kWCPluginAddFriendSex         = __kWCPluginAddFriendSex;
 static NSString * kWCPluginAddFriendOpt         = __kWCPluginAddFriendOpt;
 static NSString * kWCPluginAddFriendInterval    = __kWCPluginAddFriendInterval;
@@ -87,7 +88,8 @@ static BOOL sHiddenEnabled;
 static NSString * sHiddenPasswd;
 static NSDictionary * sHiddenUserList;
 
-static BOOL sFakeLocationEnabled;
+static BOOL sFakeLocEnabled;
+static CLLocationCoordinate2D sFakeLocCurrentLoc;
 
 static NSInteger sAddFriendSex;
 static NSInteger sAddFriendOpt;
@@ -141,8 +143,12 @@ static void __WCPluginSettingInit() {
     sHiddenPasswd = [[NSUserDefaults standardUserDefaults] objectForKey:kWCPluginHiddenPasswd];
     sHiddenUserList = [[NSUserDefaults standardUserDefaults] dictionaryForKey:kWCPluginHiddenUserList];
     
-    sFakeLocationEnabled = [[NSUserDefaults standardUserDefaults] boolForKey:kWCPluginFakeLocationEnabled];
-    
+    sFakeLocEnabled = [[NSUserDefaults standardUserDefaults] boolForKey:kWCPluginFakeLocEnabled];
+    NSDictionary * dic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:kWCPluginFakeLocCurrentLoc];
+    if (dic) {
+        sFakeLocCurrentLoc.latitude = [[dic objectForKey:@"latitude"] doubleValue];
+        sFakeLocCurrentLoc.longitude = [[dic objectForKey:@"longitude"] doubleValue];
+    }
     NSInteger sex = [[NSUserDefaults standardUserDefaults] integerForKey:kWCPluginAddFriendSex];
     if (sex < 0 || sex > 2) {
         sex = 0;
@@ -312,14 +318,34 @@ BOOL WCPluginSetHiddenUserList(NSDictionary * list) {
 
 #pragma mark - 虚拟定位开关
 
-BOOL WCPluginGetFakeLocationEnabled() {
-    return sFakeLocationEnabled;
+BOOL WCPluginGetFakeLocEnabled() {
+    return sFakeLocEnabled;
 }
 
-void WCPluginSetFakeLocationEnabled(BOOL enabled) {
-    sFakeLocationEnabled = enabled;
-    [[NSUserDefaults standardUserDefaults] setBool:enabled forKey:kWCPluginFakeLocationEnabled];
+void WCPluginSetFakeLocEnabled(BOOL enabled) {
+    sFakeLocEnabled = enabled;
+    [[NSUserDefaults standardUserDefaults] setBool:enabled forKey:kWCPluginFakeLocEnabled];
     [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+#pragma mark - 虚拟定位位置
+
+CLLocationCoordinate2D WCPluginGetFakeLocCurrentLoc() {
+    CLLocationCoordinate2D loc = kCLLocationCoordinate2DInvalid;
+    NSDictionary * dic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:kWCPluginFakeLocCurrentLoc];
+    if (dic) {
+        loc.latitude = [[dic objectForKey:@"latitude"] doubleValue];
+        loc.longitude = [[dic objectForKey:@"longitude"] doubleValue];
+    }
+    return loc;
+}
+void WCPluginSetFakeLocCurrentLoc(CLLocationCoordinate2D loc) {
+
+    NSDictionary * dic = @{@"latitude":@(loc.latitude),
+                           @"longitude":@(loc.longitude)};
+    [[NSUserDefaults standardUserDefaults] setObject:dic forKey:kWCPluginFakeLocCurrentLoc];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+
 }
 
 #pragma mark - 暴力加人性别类型
