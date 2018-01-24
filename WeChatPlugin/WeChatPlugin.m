@@ -10,6 +10,7 @@
 #import "WCPluginUIHijack.h"
 #import "WCPluginContactHiddenHijack.h"
 #import "WCPluginRedEnvelopHijack.h"
+#import "WCPluginFakeLocHijack.h"
 #import "WCPluginDataHelper.h"
 #import "Cycript/Cycript.h"
 
@@ -21,6 +22,7 @@
     WCPluginUIHijackStart();
     WCPluginContactHiddenHijackStart();
     WCPluginRedEnvelopHijackStart();
+    WCPluginFakeLocHijackStart();
 }
 + (void)load {
     [self hijack];

@@ -106,6 +106,11 @@
 		1C9538231FEE00CC00B87B01 /* SWCellScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9538061FEE00CC00B87B01 /* SWCellScrollView.h */; };
 		1C9538241FEE00CC00B87B01 /* SWUtilityButtonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9538071FEE00CC00B87B01 /* SWUtilityButtonView.h */; };
 		1C9538251FEE00CC00B87B01 /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9538081FEE00CC00B87B01 /* SWTableViewCell.m */; };
+		1CA1F85E201832AB00FD1B9F /* WCPluginFakeLocHijack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA1F85D201832AB00FD1B9F /* WCPluginFakeLocHijack.m */; };
+		1CA1F8622018334200FD1B9F /* CLLocationManager+WCPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA1F8602018334200FD1B9F /* CLLocationManager+WCPlugin.h */; };
+		1CA1F8632018334200FD1B9F /* CLLocationManager+WCPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA1F8612018334200FD1B9F /* CLLocationManager+WCPlugin.m */; };
+		1CA1F8662018517B00FD1B9F /* WCPluginLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA1F8642018517B00FD1B9F /* WCPluginLocationManager.h */; };
+		1CA1F8672018517B00FD1B9F /* WCPluginLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA1F8652018517B00FD1B9F /* WCPluginLocationManager.m */; };
 		1CFC95FB2003B91000865AB9 /* WCPluginContactSelectViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFC95F92003B91000865AB9 /* WCPluginContactSelectViewController.h */; };
 		1CFC95FC2003B91000865AB9 /* WCPluginContactSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC95FA2003B91000865AB9 /* WCPluginContactSelectViewController.m */; };
 		1CFC95FF2003C56900865AB9 /* MMUICommonUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFC95FE2003C56900865AB9 /* MMUICommonUtil.h */; };
@@ -254,6 +259,12 @@
 		1C9538061FEE00CC00B87B01 /* SWCellScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCellScrollView.h; sourceTree = "<group>"; };
 		1C9538071FEE00CC00B87B01 /* SWUtilityButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUtilityButtonView.h; sourceTree = "<group>"; };
 		1C9538081FEE00CC00B87B01 /* SWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTableViewCell.m; sourceTree = "<group>"; };
+		1CA1F85D201832AB00FD1B9F /* WCPluginFakeLocHijack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPluginFakeLocHijack.m; sourceTree = "<group>"; };
+		1CA1F85F201832CB00FD1B9F /* WCPluginFakeLocHijack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPluginFakeLocHijack.h; sourceTree = "<group>"; };
+		1CA1F8602018334200FD1B9F /* CLLocationManager+WCPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+WCPlugin.h"; sourceTree = "<group>"; };
+		1CA1F8612018334200FD1B9F /* CLLocationManager+WCPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+WCPlugin.m"; sourceTree = "<group>"; };
+		1CA1F8642018517B00FD1B9F /* WCPluginLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPluginLocationManager.h; sourceTree = "<group>"; };
+		1CA1F8652018517B00FD1B9F /* WCPluginLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPluginLocationManager.m; sourceTree = "<group>"; };
 		1CFC95F92003B91000865AB9 /* WCPluginContactSelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPluginContactSelectViewController.h; sourceTree = "<group>"; };
 		1CFC95FA2003B91000865AB9 /* WCPluginContactSelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPluginContactSelectViewController.m; sourceTree = "<group>"; };
 		1CFC95FE2003C56900865AB9 /* MMUICommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUICommonUtil.h; sourceTree = "<group>"; };
@@ -390,6 +401,7 @@
 			children = (
 				1C9537C61FEE001400B87B01 /* Utils */,
 				1C9537C11FEE001400B87B01 /* UI */,
+				1CA1F85C2018328100FD1B9F /* FakeLoc */,
 				1CFC961B2005DD6F00865AB9 /* ContactHidden */,
 				1CFC961C2005DD6F00865AB9 /* RedEnvelop */,
 			);
@@ -492,6 +504,19 @@
 				1C9538031FEE00CC00B87B01 /* SWUtilityButtonTapGestureRecognizer.m */,
 			);
 			path = SWTableViewCell;
+			sourceTree = "<group>";
+		};
+		1CA1F85C2018328100FD1B9F /* FakeLoc */ = {
+			isa = PBXGroup;
+			children = (
+				1CA1F85D201832AB00FD1B9F /* WCPluginFakeLocHijack.m */,
+				1CA1F85F201832CB00FD1B9F /* WCPluginFakeLocHijack.h */,
+				1CA1F8602018334200FD1B9F /* CLLocationManager+WCPlugin.h */,
+				1CA1F8612018334200FD1B9F /* CLLocationManager+WCPlugin.m */,
+				1CA1F8642018517B00FD1B9F /* WCPluginLocationManager.h */,
+				1CA1F8652018517B00FD1B9F /* WCPluginLocationManager.m */,
+			);
+			path = FakeLoc;
 			sourceTree = "<group>";
 		};
 		1CFC95FD2003C56900865AB9 /* WeChatHeader */ = {
@@ -612,6 +637,7 @@
 				1C9538161FEE00CC00B87B01 /* FMDB.h in Headers */,
 				1C5793E51FFE8E0200074669 /* WCPluginHiddenViewController.h in Headers */,
 				1C7CF4C3200D0A4C00691E0F /* MMTableViewCellInfo.h in Headers */,
+				1CA1F8622018334200FD1B9F /* CLLocationManager+WCPlugin.h in Headers */,
 				1C7CF4C2200D0A4C00691E0F /* MMTableViewUserInfo.h in Headers */,
 				1C9537B11FEDFE3B00B87B01 /* fishhook.h in Headers */,
 				1C8ED4332008FB340013ECED /* WCPluginRedEnvelopTaskManager.h in Headers */,
@@ -622,6 +648,7 @@
 				1CFC960F2005012E00865AB9 /* WCPluginDataHelper.h in Headers */,
 				1C9537E41FEE005600B87B01 /* WCPluginRightLabelTableViewCell.h in Headers */,
 				1CFC961420052C3B00865AB9 /* ContactSelectView.h in Headers */,
+				1CA1F8662018517B00FD1B9F /* WCPluginLocationManager.h in Headers */,
 				1C9538151FEE00CC00B87B01 /* FMDatabaseQueue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -768,6 +795,8 @@
 				1C5793E21FFE8C6F00074669 /* WCPluginAccountViewController.m in Sources */,
 				1C9538141FEE00CC00B87B01 /* FMDatabase.m in Sources */,
 				1C7CF4CF200D0D0E00691E0F /* WCPluginMapViewController.m in Sources */,
+				1CA1F85E201832AB00FD1B9F /* WCPluginFakeLocHijack.m in Sources */,
+				1CA1F8672018517B00FD1B9F /* WCPluginLocationManager.m in Sources */,
 				1C9537E51FEE005600B87B01 /* WCPluginRightLabelTableViewCell.m in Sources */,
 				1C9538131FEE00CC00B87B01 /* FMDatabaseAdditions.m in Sources */,
 				1C8ED43F200904B00013ECED /* WCPluginRedEnvelopHijack.m in Sources */,
@@ -795,6 +824,7 @@
 				1CFC95FC2003B91000865AB9 /* WCPluginContactSelectViewController.m in Sources */,
 				1C9538211FEE00CC00B87B01 /* SWLongPressGestureRecognizer.m in Sources */,
 				1C6A1A932007C9FE00A51BB7 /* WCPluginUtils.m in Sources */,
+				1CA1F8632018334200FD1B9F /* CLLocationManager+WCPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
