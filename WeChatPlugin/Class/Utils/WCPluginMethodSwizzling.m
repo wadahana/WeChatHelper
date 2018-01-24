@@ -20,7 +20,7 @@ static const char * __getMethodTypeEncoding(NSString * className, NSString * sel
 static void __overrideMethod(Class cls, NSString *selectorName, IMP implement, BOOL isClassMethod, const char *typeDescription);
 
 
-void WCPluginExchangeMethod(Class aClass, SEL oldSEL, SEL newSEL) {
+void WCPluginExchangeInstanceMethod(Class aClass, SEL oldSEL, SEL newSEL) {
     Method oldMethod = class_getInstanceMethod(aClass, oldSEL);
     assert(oldMethod);
     Method newMethod = class_getInstanceMethod(aClass, newSEL);
@@ -28,7 +28,7 @@ void WCPluginExchangeMethod(Class aClass, SEL oldSEL, SEL newSEL) {
     method_exchangeImplementations(oldMethod, newMethod);
 }
 
-void WCPluginExchangeMethodClass(Class aClass, SEL oldSEL, SEL newSEL) {
+void WCPluginExchangeClassMethod(Class aClass, SEL oldSEL, SEL newSEL) {
     Method oldMethod = class_getClassMethod(aClass, oldSEL);
     assert(oldMethod);
     Method newMethod = class_getClassMethod(aClass, newSEL);

@@ -15,9 +15,9 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 
-void WCPluginExchangeMethod(Class aClass, SEL oldSEL, SEL newSEL);
+void WCPluginExchangeInstanceMethod(Class aClass, SEL oldSEL, SEL newSEL);
 
-void WCPluginExchangeMethodClass(Class aClass, SEL oldSEL, SEL newSEL);
+void WCPluginExchangeClassMethod(Class aClass, SEL oldSEL, SEL newSEL);
 
 
 BOOL WCPluginReplaceClassMethod(NSString * className, NSString * selectorName, IMP metodImplement, NSString * methodSignature);

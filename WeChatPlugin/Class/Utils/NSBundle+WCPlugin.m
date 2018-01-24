@@ -27,13 +27,13 @@ const static NSString * kFakeBundleIdentifier = @"com.tencent.xin";
 
 + (void) hook {
     
-    WCPluginExchangeMethod([NSBundle class],
-                   @selector(infoDictionary),
-                   @selector(hooked_infoDictionary));
+    WCPluginExchangeInstanceMethod([NSBundle class],
+                                   @selector(infoDictionary),
+                                   @selector(hooked_infoDictionary));
     
-    WCPluginExchangeMethod([NSBundle class],
-                   @selector(bundleIdentifier ),
-                   @selector(hooked_bundleIdentifier));
+    WCPluginExchangeInstanceMethod([NSBundle class],
+                                   @selector(bundleIdentifier ),
+                                   @selector(hooked_bundleIdentifier));
 }
 
 @end
