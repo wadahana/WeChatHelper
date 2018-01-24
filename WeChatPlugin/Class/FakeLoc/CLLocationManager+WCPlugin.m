@@ -12,7 +12,7 @@
 #import "WCPluginLocationManager.h"
 
 static const char * kKeywordNewDelegate  = "new_delegate";
-static const char * kKeywordOriginDelegate = "origin_delegate";
+//static const char * kKeywordOriginDelegate = "origin_delegate";
 
 @implementation CLLocationManager (WCPlugin)
 

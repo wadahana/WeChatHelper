@@ -8,6 +8,8 @@
 
 #import "WCPluginMapViewController.h"
 #import "WCPluginDataHelper.h"
+#import "WGS84TOGCJ02.h"
+
 
 static NSString * kAnnotationIdentifier = @"kAnnotationIdentifier";
 
@@ -45,16 +47,15 @@ static NSString * kAnnotationIdentifier = @"kAnnotationIdentifier";
     [self.mapView addGestureRecognizer:self.longPressGesture];
     
     if (![CLLocationManager locationServicesEnabled] ||
-         [CLLocationManager authorizationStatus] == kCLAuthorizationStatusDenied) {
+        [CLLocationManager authorizationStatus] == kCLAuthorizationStatusDenied) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"实时监控没有打开，无法查看数据" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
         [alert show];
     }
-    CLLocationCoordinate2D loc = WCPluginGetFakeLocCurrentLoc();
-    if (CLLocationCoordinate2DIsValid(loc)) {
+    CLLocationCoordinate2D loc2D = WCPluginGetFakeLocCurrentLoc();
+    if (CLLocationCoordinate2DIsValid(loc2D)) {
         self.fakeLocAnnotation = [[MKPointAnnotation alloc] init];
-        self.fakeLocAnnotation.coordinate = loc;
+        self.fakeLocAnnotation.coordinate = [WGS84TOGCJ02 wgs84ToGcj02:loc2D];
         self.fakeLocAnnotation.title = @"删除";
-        
         [self.mapView addAnnotation:self.fakeLocAnnotation];
     }
 }
@@ -91,12 +92,13 @@ static NSString * kAnnotationIdentifier = @"kAnnotationIdentifier";
         MKPointAnnotation * annotation = self.selectedAnnotation;
         [self.mapView removeAnnotation:self.selectedAnnotation];
         self.selectedAnnotation = nil;
-        CLLocationCoordinate2D loc = annotation.coordinate;
-        if (CLLocationCoordinate2DIsValid(loc)) {
+        CLLocationCoordinate2D loc2D = annotation.coordinate;
+        if (CLLocationCoordinate2DIsValid(loc2D)) {
             self.fakeLocAnnotation = annotation;
             self.fakeLocAnnotation.title = @"删除";
             [self.mapView addAnnotation:self.fakeLocAnnotation];
-            WCPluginSetFakeLocCurrentLoc(loc);
+            CLLocationCoordinate2D wgs84Loc2D = [WGS84TOGCJ02 gcj02ToWgs84:loc2D];
+            WCPluginSetFakeLocCurrentLoc(wgs84Loc2D);
         }
     }
 }
@@ -109,6 +111,8 @@ static NSString * kAnnotationIdentifier = @"kAnnotationIdentifier";
     CLLocationCoordinate2D loc = kCLLocationCoordinate2DInvalid;
     WCPluginSetFakeLocCurrentLoc(loc);
 }
+
+#pragma mark - MKMapViewDelegate
 
 - (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id <MKAnnotation>)annotation {
     if ([annotation isKindOfClass:[MKUserLocation class]]) {
@@ -128,7 +132,7 @@ static NSString * kAnnotationIdentifier = @"kAnnotationIdentifier";
         [addButton addTarget:self action:@selector(onAddButton:) forControlEvents:UIControlEventTouchUpInside];
         self.selectedAnnotationView.rightCalloutAccessoryView = addButton;
         customView = self.selectedAnnotationView;
-    } else if (annotation == self.fakeLocAnnotation) {
+   } else if (annotation == self.fakeLocAnnotation) {
         if (!self.fakeLocAnnotationView) {
             self.fakeLocAnnotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:kAnnotationIdentifier];
         }
@@ -146,7 +150,7 @@ static NSString * kAnnotationIdentifier = @"kAnnotationIdentifier";
     return customView;
 }
 
-#pragma mark UIAlertViewDelegate
+#pragma mark - UIAlertViewDelegate
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 0) {
