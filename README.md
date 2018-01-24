@@ -4,8 +4,7 @@
 
 + 程序框架参考 [Naituw/IPAPatch](https://github.com/Naituw/IPAPatch)
 + 抢红包基本是**学习** [buginux/WeChatRedEnvelop](https://github.com/buginux/WeChatRedEnvelop)
-+ 隐藏好友是自己搞的
-+ ~~虚拟定位还在调试~~
++ 隐藏好友和修改定位是自己搞的
 + 还有一些功能不太完善，以后再逐步开源
 
 ## 编译
@@ -23,6 +22,7 @@
 
 + 隐藏好友
 + 抢红包
++ 修改定位
 
 ## 版权及免责声明
 本软件仅供学习和研究使用，请勿用于商业或非法用途，如有此引起的法律法规责任，由使用者自行承担。
